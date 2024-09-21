@@ -139,8 +139,15 @@ footer{
 
 
 
-.course-container{
+.complete{
     background-color: cornsilk;
+    border: 3px solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.incomplete{
+    background-color: darkcyan;
     border: 3px solid;
     border-radius: 10px;
     text-align: center;
@@ -158,6 +165,7 @@ button{
     font-size: larger;
     width: 100px;
     background-color: cadetblue;
+    margin: 20px;
 }
 
 button:hover{

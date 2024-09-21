@@ -101,10 +101,20 @@ const courses = [
 
     const container = document.querySelector("#course");
     function displayCourse(aList) {
-    document.querySelector("#course").innerHTML = "";
+    container.innerHTML = "";
     aList.forEach(element => {
         const courseContainer = document.createElement("section");
-        courseContainer.classList.add("course-container");
+        
+        if (courseContainer.completed === true){
+        courseContainer.classList.add("complete");
+        }
+        else{
+            courseContainer.classList.add("incomplete")
+        }
+
+        
+        
+
 
         const subjectTag = document.createElement("p");  
 
@@ -115,6 +125,7 @@ const courses = [
         courseContainer.appendChild(subjectTag);
 
         container.append(courseContainer);
+
 
 
     });
@@ -142,17 +153,6 @@ button2.addEventListener("click", () => {
 button3.addEventListener('click', () => {
     displayCourse(courses.filter(course => course.subject == 'CSE'))
 })
-
-
-
-const completedCourse = document.querySelector('completed')
-
-    if (completedCourse === true){
-        completed.classList.add('complete')
-    }
-    else {
-        completed.classList.add('incomplete')
-    }
 
 
 
