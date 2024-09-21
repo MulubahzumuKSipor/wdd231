@@ -165,7 +165,7 @@ button{
     font-size: larger;
     width: 100px;
     background-color: cadetblue;
-    margin: 20px;
+    
 }
 
 button:hover{
@@ -235,5 +235,9 @@ nav:hover{
 	color: #fff;
     font-size: larger;
     border: 2px solid blanchedalmond;
+}
+
+button{
+    margin: 20px;
 }
 }
