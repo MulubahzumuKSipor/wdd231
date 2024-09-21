@@ -1,0 +1,231 @@
+/* header */
+header{
+    display: block;
+    font-size: larger;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0;
+    background-color: brown;
+
+}
+
+header nav a:hover{
+    color: cornsilk;
+
+}
+h1{
+    font-size: x-large;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+header img{
+    width: 100px;
+    box-shadow: 15px 8px 3px rgb(241, 190, 190);
+    margin: 20px;
+    border-radius: 10px;
+    
+}
+
+#profile{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+/* Main */
+
+main{
+    margin-left: 1rem; 
+    margin-right: 1rem;
+}
+
+h2{
+    background-color: brown;
+    border: 0;
+    border-radius: 3px;
+    text-align: center;
+    
+}
+.middle-right img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 2px solid#bbb;
+    box-shadow: 0px 0px 20px 20px whitesmoke;
+
+}
+.middle-right figcaption{
+    text-align: center;
+}
+
+/* footer */
+
+footer{
+    display: block;
+    text-align: center;
+    background-color: brown;
+}
+
+/* Responsive Menu */
+@media only screen and (max-width: 35rem) {
+    
+
+#unseen{
+    font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+    position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+#unseen::before{
+    content: "☰";
+    
+}
+
+#unseen.open::before{
+    content: "❌";
+}
+
+.menu{
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+
+.menu a {
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.menu a:hover {
+	background-color: #bbb;
+	font-weight: 700;
+}
+.open a {
+	display: block;
+}
+}
+
+/* Course section */
+
+#course{
+    width: 100%;
+    gap: 15px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    background-color: var(--cards);
+    padding: 20px;
+    box-shadow: 0 0 40px #470101;
+}
+
+.bottom {
+    margin: 0.15rem;
+    padding: 0.35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.course-container{
+    background-color: cornsilk;
+    border: 3px solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.heading_container{
+    background-color: brown;
+    display: inline-flex;
+    font-size: xx-large;
+    
+}
+
+
+button{
+    font-size: larger;
+    width: 100px;
+    background-color: cadetblue;
+}
+
+button:hover{
+    background-color: burlywood;
+}
+
+span{
+    font-weight: bolder;
+}
+
+
+
+@media only screen and (min-width: 40rem) {
+
+    .bottom{
+        position: relative;
+    }
+
+    /* Course */
+
+.upper-grid{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 4px;
+}
+
+.course{
+    grid-row: 1/2;
+    grid-row: 1/2;
+    
+}
+/* Middle-right */
+
+.middle-right{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    
+
+}
+
+.bottom h2{
+    background-color: brown;
+    border: 0;
+    border-radius: 3px;
+    text-align: center;
+    width: 1200px;
+}
+#unseen{
+    display: none;
+}
+nav{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: #333;
+    
+}
+nav:hover{
+    
+}
+.menu a {
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+    background-color: #333;
+	color: #fff;
+    font-size: larger;
+    border: 2px solid blanchedalmond;
+}
+}
