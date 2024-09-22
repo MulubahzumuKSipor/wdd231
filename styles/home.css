@@ -270,3 +270,6 @@ nav{
     height: auto;
 }
 }
+
+.active{
+    content: ☮;
