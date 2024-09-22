@@ -12,7 +12,8 @@ ham_button.addEventListener('click', () =>
 
 /* Time problem */
 
-document.getElementById("last_modified").innerHTML = new Date((document.lastModified));
+const lastmod = document.querySelector("#last_modified");
+lastmod.innerHTML = new Date().toLocaleDateString("en-US", Option);
 document.getElementById("current_year").innerHTML = new Date().getFullYear();
 
 /* Courses Info */
@@ -99,13 +100,14 @@ const courses = [
 
 /* Display Courses */
 
+    const credits = document.querySelector('#credit')
     const container = document.querySelector("#course");
     function displayCourse(aList) {
     container.innerHTML = "";
     aList.forEach(element => {
         const courseContainer = document.createElement("section");
         
-        if (courseContainer.completed === true){
+        if (element.completed === true){
         courseContainer.classList.add("complete");
         }
         else{
@@ -125,16 +127,15 @@ const courses = [
         courseContainer.appendChild(subjectTag);
 
         container.append(courseContainer);
-
-
-
-    });
+});
 }
 
 displayCourse(courses);
 
 
+
 /* Course Buttons */
+
 
 const button1 = document.querySelector('#all');
 const button2 = document.querySelector('#wdd');

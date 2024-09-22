@@ -1,0 +1,273 @@
+
+
+
+
+/* header */
+header{
+    display: block;
+    font-size: larger;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0;
+    background-color: lightgreen;
+
+}
+
+
+h1{
+    font-size: x-large;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+header img{
+    width: 100px;
+    box-shadow: 15px 8px 3px rgb(241, 190, 190);
+    margin: 20px;
+    border-radius: 10px;
+    
+}
+
+#profile{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+
+
+
+
+/* Main */
+
+main{
+    margin-left: 1rem; 
+    margin-right: 1rem;
+}
+
+h2{
+    background-color: lightgreen;
+    border: 0;
+    border-radius: 3px;
+    text-align: center;
+    
+}
+.middle-right img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 2px solid#bbb;
+    box-shadow: 0px 0px 20px 20px whitesmoke;
+
+}
+caption{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* footer */
+
+footer{
+    display: block;
+    text-align: center;
+    background-color: lightgreen;
+    height: 70px;
+    justify-content: center;
+}
+
+
+
+
+/* Responsive Menu */
+@media screen and (max-width: 35rem) {
+    
+
+#unseen{
+    font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+    position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+#unseen::before{
+    content: "☰";
+    
+}
+
+#unseen.open::before{
+    content: "❌";
+}
+
+.menu{
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+
+.menu a {
+    display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.menu a:hover {
+	background-color: #bbb;
+	font-weight: 700;
+}
+.open a {
+	display: block;
+}
+
+}
+
+
+
+
+
+
+
+
+/* Course section */
+
+#course{
+    display: flexbox;
+}
+
+.bottom{
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0 0 40px #470101;
+    
+}
+
+
+
+.complete{
+    background-color: cornsilk;
+    border: 3px solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.incomplete{
+    background-color: darkcyan;
+    border: 3px solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
+
+#courseHead button{
+    display: inline-flex;
+    align-content: center;
+    text-align: center;
+    font-size: larger;
+    background-color: cadetblue;
+    
+}
+
+#courseHead button:hover{
+    background-color: burlywood;
+}
+
+span{
+    font-weight: bolder;
+}
+
+
+
+@media only screen and (min-width: 36rem) {
+
+    
+    
+
+    
+    /* Course */
+
+.upper-grid{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 4px;
+}
+
+.course{
+    grid-row: 1/2;
+    grid-row: 1/2;
+    
+}
+/* Middle-right */
+
+.middle-right{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    
+
+}
+
+/* Bottom */
+
+.bottom h2{
+    background-color: lightgreen;
+    border: 0;
+    border-radius: 3px;
+    text-align: center;
+    width: auto;
+}
+
+#courseHead button{
+    margin: 20px;
+    justify-content: center;
+    align-content: center;
+}
+.bottom{
+    border: 4px solid darkcyan;
+}
+
+.unseen button {
+    display: none;
+}
+
+
+
+header nav a:hover{
+    background-color: darkblue;
+
+}
+
+nav{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: #1a1a1a;
+    
+}
+
+
+.menu a {
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #000000;
+    color: #fff;
+    font-size: larger;
+    border: 2px solid rgb(251, 239, 220);
+}
+}
