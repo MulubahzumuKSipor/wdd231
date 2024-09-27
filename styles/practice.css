@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+
+@media screen and (min-width : 34rem) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+  
+  
+}
+
+main{
+  margin: 3rem;
+  text-decoration: overline solid blue;
+}
+
+body{
+  font-family:monospace;
+}
+
+section{
+  background-color: bisque;
+  border: 3px ;
+  border-radius: 10px;
+  align-items: center;
+}
+
+h1{
+  font-weight: 700;
+  text-decoration: double underline;
+  margin-left: 2rem;
+}
+
+img{
+  padding-left: 20px;
+  padding-bottom: 20px;
+  width: 17rem;
+  justify-content: center;
+  align-items: center;
+}
+
+footer{
+  margin: 1rem;
+  font-size: larger;
+}
+
+button{
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
