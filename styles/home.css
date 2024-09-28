@@ -138,6 +138,7 @@ h2{
     text-align: center;
     color: #fff;
     font-weight: bold;
+    border: 1px solid white;
 }
 
 .incomplete{
@@ -146,6 +147,7 @@ h2{
     text-align: center;
     color: #fff;
     font-weight: bold;
+    border: 1px solid white;
 }
 
 /* footer */
@@ -240,10 +242,10 @@ nav{
 }
 
 #course{
-    display:grid;
     justify-content: center;
     display: flex;
     padding: 5px;
+    flex-wrap: wrap;
 }
 
 .complete{
@@ -269,4 +271,8 @@ nav{
     width: 500px;
     height: auto;
 }
+}
+
+.active::after{
+    content: "❤";
 }

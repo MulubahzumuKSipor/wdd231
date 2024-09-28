@@ -1,23 +1,3 @@
-/* responsive Menu */
-const ham_button = document.querySelector("#unseen")
-const navigation = document.querySelector(".menu")
-
-ham_button.addEventListener('click', () =>
-        {
-        navigation.classList.toggle('open');
-        ham_button.classList.toggle('open');
-        
-    }
-);
-
-/* Time problem */
-
-const lastmod = document.querySelector("#last_modified");
-lastmod.innerHTML = new Date().toLocaleDateString("en-US", Option);
-document.getElementById("current_year").innerHTML = new Date().getFullYear();
-
-/* Courses Info */
-
 const courses = [
     {
         subject: 'CSE',
@@ -98,97 +78,17 @@ const courses = [
     }
 ]
 
-/* Display Courses */
-    const creditSum = document.querySelector("#credits")
-    const container = document.querySelector("#course");
-    function displayCourse(aList) {
-        container.innerHTML = "";
-        aList.forEach(element => {
-            const courseContainer = document.createElement("section");
-            courseContainer.classList.add('section')
+const totalCredits = document.querySelector("#credits")
+function displayTotalCredits(sum){
+    totalCredits.innerHTML = "";
+    sum.forEach(element => {
+        const creditContainer = document.createElement("section");
+        creditContainer.classList.add("credit_container");
 
-            const subjectTag = document.createElement("p");
-            const numberTag = document.createElement("p");
-            const titleTag = document.createElement("p");
-            const creditTag = document.createElement("p");
-            const certificateTag = document.createElement("p");
-            const descriptionTag = document.createElement("p");
-            const technologyTag = document.createElement("p");
-            const completedTag = document.createElement("p");
+        const creditTag = document.createElement("p");
 
-            const subject = `${element.subject} ${element.number}`;
-            const credit = `<span>Required Credits: ${element.credits}</span>`;
-            const number = `${element.number}`
-            const title = `${element.title}`
-            const certificate = `${element.certificate}`
-            const description = `${element.description}`
-            const technology = `${element.technology}`
-            const completed = `${element.completed}`
+        const credit = `<span>Total Credits: </span>${element.credits}`
 
-
-
-
-            numberTag.innerHTML = number;
-            titleTag.innerHTML = title;
-            creditTag.innerHTML = credit;
-            certificateTag.innerHTML = certificate;
-            descriptionTag.innerHTML = description;
-            technologyTag.innerHTML = technology;
-            completedTag.innerHTML = completed;
-            subjectTag.innerHTML = subject;
-            creditTag.innerHTML = credit;
-
-
-
-
-
-
-            
-            if (element.completed === true){
-            courseContainer.classList.add("complete");
-            }
-            else{
-                courseContainer.classList.add("incomplete")
-            }
-
-            
-            
-            courseContainer.appendChild(subjectTag);
-            courseContainer.appendChild(creditTag);
-            
-
-            container.append(courseContainer);
-});
-
-
-}
-
-displayCourse(courses);
-
-
-/* Course Buttons */
-
-
-const button1 = document.querySelector('#all');
-const button2 = document.querySelector('#wdd');
-const button3 = document.querySelector('#cse');
-
-
-
-const display = button1.addEventListener('click', () => {
-    displayCourse(courses)
-})
-
-button2.addEventListener("click", () => {
-    displayCourse(courses.filter(course => course.subject == 'WDD'))
-})
-
-button3.addEventListener('click', () => {
-    displayCourse(courses.filter(course => course.subject == 'CSE'))
-})
-
-
-
-
-
-
+        creditTag.innerHTML = credit;    
+    
+    })}
