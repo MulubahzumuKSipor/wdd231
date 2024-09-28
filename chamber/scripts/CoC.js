@@ -26,7 +26,7 @@ const displayBusiness = (businesses) => {
         let businessName = document.createElement('h2');
         let address = document.createElement('p')
         let contact = document.createElement('p')
-        let email = document.createElement('p')
+        let email = document.createElement('a')
         let membership = document.createElement('p')
         let portrait = document.createElement('img');
 
