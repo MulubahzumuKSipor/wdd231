@@ -42,8 +42,8 @@ const displayBusiness = (businesses) => {
         portrait.setAttribute('src', business.icons);
         portrait.setAttribute('alt', `Icon of ${business.icons}`);
         portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '50');
-        portrait.setAttribute('height', '45');
+        portrait.setAttribute('width', '150');
+        portrait.setAttribute('height', '100');
 
         businessCard.appendChild(portrait);
         businessCard.appendChild(businessName);
