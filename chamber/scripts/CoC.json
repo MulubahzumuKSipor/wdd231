@@ -1,5 +1,4 @@
-{
-    "businesses" : [
+[
         {"Name" : "Total gas Station",
         "Address" : "Duport Road Junction",
         "Contact" : "(+231) 776-021-231",
@@ -47,5 +46,5 @@
         "Contact" : "(+231) 776-021-231",
         "WebsiteUrls" : "www.mulubahzumuksipor.github.io",
         "icons" : "https://mulubahzumuksipor.github.io/wdd231/chamber/images/sswIcon.svg",
-        "MembershipLevel" : "member"}]
-}
+        "MembershipLevel" : "member"}
+]
