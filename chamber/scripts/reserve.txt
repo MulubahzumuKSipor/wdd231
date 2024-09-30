@@ -1,0 +1,86 @@
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const viewDifferent = document.querySelectorAll("#view>button");
+
+    viewDifferent.forEach(option => {
+        option.addEventListener("click", event => handleViewDifferentClick(event.target));
+    });
+
+    displayBusiness(businesses);
+
+});
+
+function handleViewDifferentClick(target) {
+    const business = document.querySelector("businessCards");
+    // if target id is grid-view or list-view
+    if (target.id === "grid-view") {
+        target.classList.toggle("active");
+        document.getElementById("list-view").classList.toggle("active");
+        // remove any classes that are on the companies element
+        companies.classList = "grid";
+    } else if (target.id === "list-view") {
+        target.classList.toggle("active");
+        document.getElementById("grid-view").classList.toggle("active");
+        companies.classList = "list";
+    } else {
+        // get parent element of target until it is a button
+        while (target.nodeName !== "BUTTON") {
+            target = target.parentNode;
+        }
+        
+        handleViewDifferentClick(target);
+    }
+}
+
+
+const displayBusiness = (businesses) => {
+    businesses.forEach((business) => {
+
+        let businessCard = document.createElement('section');
+        businessCard.classList.add("busCards");
+        let businessName = document.createElement('h2');
+        businessName.classList.add("fonts");
+        let address = document.createElement('p');
+        address.classList.add("cont");
+        let contact = document.createElement('p');
+        contact.classList.add("cont");
+        let member = document.createElement('p');
+        member.classList.add("cont");
+        let webUrls = document.createElement('p');
+        webUrls.classList.add("cont");
+        let portrait = document.createElement('img');
+        portrait.classList.add("icons");
+
+        
+        businessName.innerHTML = ` ${business.Name}`;
+        address.textContent =  `${business.Address}`;
+        contact.textContent =  `${business.Contact}`;
+        member.textContent=   `${business.WebsiteUrls}`;
+        webUrls.textContent =  `Membership Level: ${business.MembershipLevel}`;
+
+
+
+        portrait.setAttribute('src', business.icons);
+        portrait.setAttribute('alt', `Icon of ${business.icons}`);
+        portrait.setAttribute('loading', 'lazy');
+        portrait.setAttribute('width', '50');
+        portrait.setAttribute('height', '45');
+
+        businessCard.appendChild(portrait);
+        businessCard.appendChild(businessName);
+        businessName.appendChild(address);
+        businessName.appendChild(contact);
+        businessName.appendChild(member);
+        businessName.appendChild(webUrls);
+
+
+        cards.appendChild(businessCard);
+    });
+}
+
+
+
+
+

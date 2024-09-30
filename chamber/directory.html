@@ -15,75 +15,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="styles/normalize.css">
     <script src="scripts/CoC.js" defer></script>
+    <link rel="stylesheet" href="styles/CoC.css">
     <link rel="stylesheet" href="styles/">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
+    <link rel="stylesheet" href="styles/CoC-responsive.css">
+    <script src="scripts/fetc.js" defer ></script>
     <title>Chamber of Commerce</title>
 </head>
 <body> 
     <header>
-        <h1>Timbuktu</h1>
-        <h2>Chamber of Commerce</h2>
-        <img src="" alt="">
+        <div class="logo"><a href="directory.html"><img src="images/study-icon.svg" alt="Baddest-Icon"></a></div>
+        <div class="midclass"><h1>S.Sweats <br> <span>Chamber of Commerce</span></h1></div>  
         <nav>
-            <a href="">Home</a>
-            <a href="">Directory</a>
-            <a href="">Join</a>
-            <a href="">Discover</a>
+            <div class="off-screen" >
+                <ul>
+                    <a href="">Homepage</a>
+                    <a href="directory.html">Directory</a>
+                    <a href="">Discover</a>
+                    <a href="">Join</a>
+                </ul>
+            </div>
         </nav>
+        <div class="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
     <main>
-        <img src="" alt="">
-        <h3>Keynote Tickets</h3>
-        <section>
-            <h4>Home</h4>
+        <h2>Home</h2>
+        <section class="home">
             <div class="events">
-                <h2>Events</h2>
+                <h2 class="blue">Events</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
 
             <section id="weather-card">
-                <h2>weather</h2>
-                <img id="weather-icon" src="images/weather.svg" alt="weather icon">
-                <table id="weather-table">
-                    <tr>
-                        <td class="table-title">Temperature: </td>
-                        <td id="temp-value">25.8°C</td>
-                    </tr>
-                    <tr>
-                        <td class="table-title">Visibility: </td>
-                        <td>Cloudy</td>
-                    </tr>
-                    <tr>
-                        <td class="table-title">High: </td>
-                        <td> 84°F</td>
-                    </tr>
-                    <tr>
-                        <td class="table-title">Low: </td>
-                        <td>75°F</td>
-                    </tr>
-                    <tr>
-                        <td class="table-title">Humidity: </td>
-                        <td>92%</td>
-                    </tr>
-                    <tr>
-                        <td class="table-title">Sunrise: </td>
-                        <td>6:45 AM</td>
-                    </tr>
-                    <tr>
-                        <td class="table-title">Sunset: </td>
-                        <td>6:00 PM</td>
-                    </tr>
-                </table>
+                <h2 class="blue">Weather</h2>
+                <div class="flex">
+                    <img id="weather-icon" src="images/weather.svg" alt="weather icon">
+                    <table id="weather-table">
+                        <tr>
+                            <td class="table-title">Temperature: </td>
+                            <td id="temp-value">25.8°C</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title">Visibility: </td>
+                            <td>Cloudy</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title">High: </td>
+                            <td> 84°F</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title">Low: </td>
+                            <td>75°F</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title">Humidity: </td>
+                            <td>92%</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title">Sunrise: </td>
+                            <td>6:45 AM</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title">Sunset: </td>
+                            <td>6:00 PM</td>
+                        </tr>
+                    </table>
+                </div>
             </section>
-
             <div class="weatherForecast">
-                <h2>Weather Forecast</h2>
+                <h2 class="blue">Weather Forecast</h2>
                 <table id="weatherForecast">
                     <tr>
                         <td class="table-title">Monday: </td>
-                        <td id="temp-value">75°F</td>
+                        <td>75°F</td>
                     </tr>
                     <tr>
                         <td class="table-title">Tuesday: </td>
@@ -95,28 +111,54 @@
                     </tr>
                 </table>
             </div>
-
         </section>
-        <section id="businessCards"></section>
-
+        <div id="view">
+            <button id="grid" aria-label="Grid view" aria-pressed="true" class="active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="currentColor"
+                    class="bi bi-grid-3x3-gap" viewBox="0 0 16 16">
+                    <path
+                        d="M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z" />
+                </svg>
+            </button>
+            <button id="list" aria-label="List view" aria-pressed="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="currentColor"
+                    class="bi bi-list-ul" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                </svg>
+            </button>
+        </div>
+        <div id="cards" class="grid">
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+        </div>
     </main>
     <footer>
-        <h5>S.Sweats Chamber of Commerce</h5>
-        <p>
-            sip23001@byui.edu <br>
-            (231) 777-790-909
-        </p>
-        <div class="footerIma">
-            <img src="images/youtube.png" alt="Youtube Icon">
-            <img src="images/facebook.png" alt="Facebook Icon">
-            <img src="images/insta.jpeg" alt="Instagram Icon">
+        <div>
+            <p>
+                <span id="modified">Timbuktu Chamber of Commerce</span><br>
+                sip23001@byui.edu <br>
+                (231) 777-790-909
+            </p>
         </div>
-        <p>
-            WDD231 Class Project <br>
-            Mulubahzumu Kemmeh Sipor <br>
-            ©<span id="year"></span> S.Sweats Chamber of Commerce <br>
-            Last Modification: <span id="last_modified"></span>
-        </p>
+        <div class="footerIma">
+            <a href="https://github.com/MulubahzumuKSipor"><img src="images/GitHub.svg" alt=" Icon" loading="lazy" width="30" height="30"></a>
+            <a href="https://www.linkedin.com/in/mulubahzumu-kemmeh-sipor-526a74197/"><img src="images/LinkedIn-Logo.wine.svg" alt="Li Icon" loading="lazy" width="30" height="30"></a>
+            <a href="https://facebook.com/"><img src="images/Facebook-f_Logo-Blue-Logo.wine.svg" alt="Facebook Icon" loading="lazy" width="30" height="30"></a>
+        </div>
+        <div>
+            <p>
+                WDD231 Class Project <br>
+                Mulubahzumu Kemmeh Sipor <br>
+                ©<span id="year"></span> S.Sweats Chamber of Commerce <br>
+                <span id="last_modified"></span>
+            </p>
+        </div>
     </footer>
 </body>
 </html>
