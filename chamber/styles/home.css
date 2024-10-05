@@ -64,11 +64,13 @@
         transform: translate(-50%, 50%) rotate(-45deg);
     } 
 
-    nav ul a{
+    nav a{
         font-size: xx-large;
         color: azure;
         display: grid;
         padding: 5px;
+        text-align: center;
+        justify-content: center;
     }
     nav ul li:nth-child(2) {
         background-color: black;
