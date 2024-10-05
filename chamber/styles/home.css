@@ -149,14 +149,7 @@ figure img{
     height: auto;
 }
 
-figure figcaption button{
-    font-size: larger;
-    border: 2px solid brown;
-    position: absolute;
-    bottom: 8px;
-    right: 12px;
-    
-}
+
 
 figure figcaption button:hover {
     background-color: brown;
@@ -261,6 +254,14 @@ footer p, h5{
 /* Responsive Sites */ 
 
 @media only screen and (min-width: 30rem) {
+    figure figcaption button{
+    font-size: larger;
+    border: 2px solid brown;
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    
+}
     header{
         display: flex;
         font-size: large;
