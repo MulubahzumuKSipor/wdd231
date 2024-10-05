@@ -1,8 +1,20 @@
 // Fetch the fetch("scripts/members.json"); with async/await
 const fetchMembers = async () => {
-    const response = await fetch("https://mulubahzumuksipor.github.io/wdd231/chamber/scripts/CoC.json");
-    const members = await response.json();
-    return members;
+    try {
+        const response = await fetch("https://mulubahzumuksipor.github.io/wdd231/chamber/scripts/CoC.json");
+        
+        // Check if the response status is successful
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const members = await response.json();
+        return members;
+    } catch (error) {
+        console.error("Error fetching or parsing data:", error);
+        // Optionally, return a fallback value or handle the error as needed
+        return null; // or an empty array: []
+    }
 };
 
 document.addEventListener("DOMContentLoaded", () => {

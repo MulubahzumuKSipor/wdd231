@@ -94,7 +94,7 @@ header{
     border: 0.2rem solid brown;
     border-color: brown;
     background-color: azure;
-    background-image: linear-gradient(to left, rgb(0, 0, 0, 0.8), darkgrey);
+    background-image: linear-gradient(to left, rgb(255, 0, 0, 0.8), darkgrey);
     justify-content: center;
     align-items: center;
 }
@@ -157,6 +157,9 @@ header nav a:hover{
 }
 .blue{
     background-color: brown;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 100%;
 }
 #weather-card{
     align-items: center;
@@ -270,7 +273,6 @@ footer p, h5{
 
     h1{
         padding-right: 50px;
-        font-family: "Algerian";
     }
 
     header span{
@@ -286,6 +288,7 @@ footer p, h5{
         color: #fff;
         font-size: larger;
     }
+
     
     body{
         margin-left: 3rem;
@@ -462,4 +465,10 @@ footer p, h5{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+}
+
+#first-text{
+    font-size: large;
+    justify-content: center;
+    
 }

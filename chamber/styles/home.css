@@ -1,0 +1,347 @@
+@media only screen and (max-width: 30rem) {
+    /* Menu */
+    .off-screen{
+        background-color: brown;
+        height: 50vh;
+        width: 60%;
+        max-width: 450px;
+        position: fixed;
+        top: 0;
+        right: -450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        text-align: left;
+        font-size: x-large;
+        transition: .3s ease;
+    }
+
+
+
+    .off-screen.active{
+        right: 0;
+    }
+
+    .menu{
+        height: 50px;
+        width: 50px;
+        margin-left: auto;
+        position: relative;
+    }
+
+    .menu span{
+        height: 5px;
+        width: 100%;
+        background-color: black;
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s ease;
+    }
+
+    .menu span:nth-child(1){
+        top: 25%;
+    }
+    .menu span:nth-child(3){
+        top: 75%;
+    }
+
+    .menu.active span:nth-child(1){
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .menu.active span:nth-child(2){
+        opacity: 0;
+
+    }
+
+    .menu.active span:nth-child(3){
+        top: 50%;
+        transform: translate(-50%, 50%) rotate(-45deg);
+    } 
+
+    nav ul a{
+        font-size: xx-large;
+        color: azure;
+        display: grid;
+        padding: 5px;
+    }
+    nav ul li:nth-child(2) {
+        background-color: black;
+    }
+
+    #view button{
+        display: none;
+    }
+}
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* header */
+
+header{
+    display: flex;
+    font-size: medium;
+    border: 0.2rem solid brown;
+    border-color: brown;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    height: 4rem;
+    padding: 1rem;
+    
+    
+}
+
+#sided{
+    display: flex;
+}
+
+/* Main */
+main{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.brownbg{
+    background-color: brown;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#boardroom {
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+figure{
+    position: relative;
+    margin: 0;
+}
+
+figure img{
+    width: 100%;
+    height: auto;
+}
+
+figure figcaption button{
+    font-size: larger;
+    border: 2px solid brown;
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    
+}
+
+figure figcaption button:hover {
+    background-color: brown;
+    color: white;
+}
+
+.events{
+    height: 100%;
+}
+
+.blue{
+    background-color: brown;
+    justify-content: center;
+    text-align: center;
+    font-size: x-large;
+}
+
+#weather-icon {
+    max-width: 10%;
+    
+}
+
+#weather-card{
+    padding-bottom: 10px;
+    display: grid;
+    background-color: rgb(165, 42, 42, 0.4);
+}
+
+.flex{
+    display: grid;
+    color: black;
+    font-size: medium;
+    text-align: center;
+    justify-content: center;
+}
+
+#weatherForecast{
+    text-align: center;
+    background-color: rgb(165, 42, 42, 0.4);
+}
+
+.center{
+    text-align: center;
+}
+
+.cardSection {
+    max-width: 300px;
+    box-shadow: 0 0 10px rgb(165, 42, 42, 0.4);
+    min-height: 150px;
+    border: 2px solid brown;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* footer */
+footer {
+    border: 0.5rem solid brown;
+    border-radius: 1rem;
+    border-color: brown;
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+
+
+
+footer p{
+    text-align: left;
+}
+.footerIma{
+    display: flex; 
+    
+}
+
+.footerIma img{
+    padding-left: 15px;
+    width: 80px;
+    height: 80px;
+
+}
+
+footer p, h5{
+    padding-left: 15px
+}
+
+#modified{
+    font-weight: bolder;
+    padding-bottom: 20px;
+    text-decoration: double underline;
+}
+
+
+
+
+/* Responsive Sites */ 
+
+@media only screen and (min-width: 30rem) {
+    header{
+        display: flex;
+        font-size: large;
+        border: 0.5rem solid brown;
+        border-radius: 1rem;
+        border-color: brown;
+        text-align: center;
+        justify-content: space-between;
+        margin-left: 2rem;
+        margin-right: 2rem;
+            
+    }
+    #sided{
+        display: flex;
+        padding-left: 50px;
+    }
+
+    nav a{
+        color: black;
+        font-style: oblique;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    nav a:hover{
+        color: brown;
+    }
+
+    nav a:active{
+        color: blue;
+        
+    }
+
+    /* main */
+
+    main{
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    figure figcaption button{
+        font-size: xx-large;
+        border: 2px solid brown;
+        position: absolute;
+        bottom: 8px;
+        right: 12px;
+        
+    }
+    #flex{
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        justify-content: space-between;
+        max-height: 100vh;
+    }
+
+    .home{
+        width: 100%;
+    }
+    #weather-card{
+        width: 100%;
+    }
+    
+    #weatherForecast{
+        width: 100%;
+        background-color: none;
+    }
+    
+    #cards{
+        display: flex;
+        width: 100%;
+        min-width: 300px;
+    }
+
+    
+    footer{
+        display: flex;
+        font-size: large; 
+        justify-content: space-evenly;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    
+    footer p{
+        text-align: center;
+        font-size: larger;
+    }
+    .footerIma{
+        display: flex; 
+        
+    }
+    
+    .footerIma img{
+        padding: 15px;
+        width: 100px;
+        justify-content: center;
+        
+    }
+    
+}

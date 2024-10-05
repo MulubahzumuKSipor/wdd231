@@ -10,7 +10,7 @@
     <meta name="Author" content="Mulubahzumu Kemmeh Sipor">
     <meta property = "og:title" content="Chamber of Commerce">
     <meta property = "og:type" content="website">
-    <meta property = "og:image" content="images/monrovia.jpeg">
+    <meta property = "og:image" src="images/monrovia.jpeg">
     <meta property = "og:url" content="https://mulubahzumuksipor.github.io/wdd231/chamber/directory.html">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -31,10 +31,12 @@
         <div class="midclass"><h1>S.Sweats <br> <span>Chamber of Commerce</span></h1></div>  
         <nav>
             <div class="off-screen" >
-                    <a href="">Homepage</a>
-                    <a href="directory.html">Directory</a>
+                <ul>
+                    <a href="index.html">Homepage</a>
+                    <a href="directory.html" class="active"> Directory</a>
                     <a href="">Discover</a>
                     <a href="">Join</a>
+                </ul>
             </div>
         </nav>
         <div class="menu">
@@ -44,72 +46,10 @@
         </div>
     </header>
     <main>
-        <h2>Home</h2>
-        <section class="home">
-            <div class="events">
-                <h2 class="blue">Events</h2>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-
-            <section id="weather-card">
-                <h2 class="blue">Weather</h2>
-                <div class="flex">
-                    <img id="weather-icon" src="images/weather.svg" alt="weather icon">
-                    <table id="weather-table">
-                        <tr>
-                            <td class="table-title">Temperature: </td>
-                            <td id="temp-value">25.8°C</td>
-                        </tr>
-                        <tr>
-                            <td class="table-title">Visibility: </td>
-                            <td>Cloudy</td>
-                        </tr>
-                        <tr>
-                            <td class="table-title">High: </td>
-                            <td> 84°F</td>
-                        </tr>
-                        <tr>
-                            <td class="table-title">Low: </td>
-                            <td>75°F</td>
-                        </tr>
-                        <tr>
-                            <td class="table-title">Humidity: </td>
-                            <td>92%</td>
-                        </tr>
-                        <tr>
-                            <td class="table-title">Sunrise: </td>
-                            <td>6:45 AM</td>
-                        </tr>
-                        <tr>
-                            <td class="table-title">Sunset: </td>
-                            <td>6:00 PM</td>
-                        </tr>
-                    </table>
-                </div>
-            </section>
-            <div class="weatherForecast">
-                <h2 class="blue">Weather Forecast</h2>
-                <table id="weatherForecast">
-                    <tr>
-                        <td class="table-title">Monday: </td>
-                        <td>75°F</td>
-                    </tr>
-                    <tr>
-                        <td class="table-title">Tuesday: </td>
-                        <td>80°F</td>
-                    </tr>
-                    <tr>
-                        <td class="table-title">Wednesday: </td>
-                        <td> 84°F</td>
-                    </tr>
-                </table>
-            </div>
-        </section>
+        <p id="first-text">This website will serve as a resource hub for businesses in the city of Monrovia. 
+            The site will provide information on local events, host networking opportunities, 
+            create business directories, and encourage local shopping. It aims to promote local 
+            economic growth, support local businesses, and foster a sense of community between the businesses.</p>
         <div id="view">
             <button id="grid" aria-label="Grid view" aria-pressed="true" class="active">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="currentColor"
