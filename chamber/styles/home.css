@@ -79,6 +79,18 @@
     #view button{
         display: none;
     }
+    
+    figure figcaption button{
+    font-size: larger;
+    border: 2px solid brown;
+    bottom: 8px;
+    right: 12px;
+    }
+    
+    figure{
+    position: relative;
+    margin: 0;
+    }
 }
 *{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
