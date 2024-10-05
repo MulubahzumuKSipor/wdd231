@@ -1,100 +1,74 @@
 
-@media only screen and (max-width: 34rem) {
-    /* Menu */
-    .off-screen{
-        background-color: brown;
-        height: 50vh;
-        width: 60%;
-        max-width: 450px;
-        position: fixed;
-        top: 0;
-        right: -450px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-        text-align: left;
-        font-size: x-large;
-        transition: .3s ease;
-    }
-
-
-
-    .off-screen.active{
-        right: 0;
-    }
-
-    .menu{
-        height: 50px;
-        width: 50px;
-        margin-left: auto;
-        position: relative;
-    }
-
-    .menu span{
-        height: 5px;
-        width: 100%;
-        background-color: black;
-        border-radius: 25px;
+@media only screen and (max-width: 30rem) {
+    #menu {
+        display: block;
+        font-size: 2rem;
+        font-weight:700;
+        text-decoration: none;
+        padding: .5rem .75rem;
+        background-color: #eee;
+        color: #000;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        transition: .3s ease;
+        right: 10px;
+        top: 10px;
     }
-
-    .menu span:nth-child(1){
-        top: 25%;
+    
+    #menu::before {
+        content: "≡";
     }
-    .menu span:nth-child(3){
-        top: 75%;
+    
+    nav {
+        background-color: tomato;
     }
-
-    .menu.active span:nth-child(1){
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(45deg);
+    .navigation {
+        list-style: none;
+        margin: 0 auto;
+        max-width: 760px;
     }
-
-    .menu.active span:nth-child(2){
-        opacity: 0;
-
-    }
-
-    .menu.active span:nth-child(3){
-        top: 50%;
-        transform: translate(-50%, 50%) rotate(-45deg);
-    } 
-
-    nav ul a{
-        font-size: xx-large;
-        color: azure;
-        display: grid;
-        padding: 5px;
-    }
-    nav ul li:nth-child(2) {
-        background-color: black;
-    }
-
-    #view button{
+    
+    .navigation li {
         display: none;
     }
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
+        font-size: clamp(1rem, 2vmin, 1.5rem);
+    }
+    
+    .navigation a:hover, navigation a:active {
+        color: white;
+        background-color: black;
+    }
+    
+    .show li {
+        display: block;
+    }
+    
+    #menu.show::before {
+        content: "X";
+    }
+    
+    
 }
 
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
+h1 span{
+    color: brown;
+}
 
-
-
-
-
-
-    /* Header */
 header{
     display: flex;
     font-size: medium;
     border: 0.2rem solid brown;
     border-color: brown;
-    background-color: azure;
-    background-image: linear-gradient(to left, rgb(255, 0, 0, 0.8), darkgrey);
     justify-content: center;
     align-items: center;
 }
@@ -106,9 +80,10 @@ header img{
     
 }
 
-header nav a:hover{
-    background-color: black;
-    color: white;
+#sided{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -261,32 +236,52 @@ footer p, h5{
 }
 
 @media only screen and (min-width: 34rem) {
+    #menu{
+        display: none;
+    }
     header{
         display: flex;
         font-size: large;
-        border: 0.5rem solid brown;
-        border-radius: 1rem;
-        border-color: brown;
+        border: none;
         text-align: center;
+        margin-left: 2rem;
+        margin-right: 2rem;
             
     }
-
-    h1{
-        padding-right: 50px;
+    #sided{
+        display: flex;
     }
 
-    header span{
-        color: white;
-
+    nav li {
+        display: inline;
+        padding-top: 1rem;
+        padding-bottom: 1rem ;
+        background-color: rgb(165, 42, 42, 0.8);
     }
 
-    nav{
-        padding-left: 30px;
+    nav li:hover{
+        background-color: black;
+        
     }
 
+    nav li a:hover{
+        color: #eee;
+    }
     nav a{
-        color: #fff;
-        font-size: larger;
+        color: white;
+        font-style: oblique;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        align-items: center;
+        margin: 7rem;
+        text-align: center;
+    }
+    nav li a:hover{
+        color: brown;
+    }
+
+    nav a:active{
+        color: blue;
+        
     }
 
     

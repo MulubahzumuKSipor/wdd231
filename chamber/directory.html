@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="This website will serve as a resource hub for businesses in the city of Paynesville. 
+    <meta name="Description" content="This website will serve as a resource hub for businesses in the city of Timbuktu. 
                                         The site will provide information on local events, host networking opportunities, 
                                         create business directories, and encourage local shopping. It aims to promote local 
                                         economic growth, support local businesses, and foster a sense of community between the businesses.">
@@ -23,30 +23,25 @@
     <link rel="manifest" href="images/site.webmanifest">
     <link rel="stylesheet" href="styles/CoC-responsive.css">
     <script src="scripts/fetc.js" defer ></script>
+    <script src="scripts/responsive_menu.js" defer></script>
     <title>Chamber of Commerce</title>
 </head>
 <body> 
     <header>
-        <div class="logo"><a href="directory.html"><img src="images/study-icon.svg" alt="Baddest-Icon"></a></div>
-        <div class="midclass"><h1>S.Sweats <br> <span>Chamber of Commerce</span></h1></div>  
-        <nav>
-            <div class="off-screen" >
-                <ul>
-                    <a href="index.html">Homepage</a>
-                    <a href="directory.html" class="active"> Directory</a>
-                    <a href="">Discover</a>
-                    <a href="">Join</a>
-                </ul>
-            </div>
-        </nav>
-        <div class="menu">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div id="sided">
+            <a href="directory.html"><img src="images/study-icon.svg" alt="Baddest-Icon"></a> 
+            <h1>S.Sweats <br> <span>Chamber of Commerce</span></h1>
         </div>
+        <button id="menu"></button>
     </header>
+    <nav class="navigation">
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="directory.html" class="active"> Directory</a></li>
+        <li><a href="">Discover</a></li>
+        <li><a href="">Join</a></li>
+    </nav>
     <main>
-        <p id="first-text">This website will serve as a resource hub for businesses in the city of Paynesville. 
+        <p id="first-text">This website will serve as a resource hub for businesses in the city of Monrovia. 
             The site will provide information on local events, host networking opportunities, 
             create business directories, and encourage local shopping. It aims to promote local 
             economic growth, support local businesses, and foster a sense of community between the businesses.</p>

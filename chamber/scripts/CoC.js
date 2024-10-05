@@ -5,15 +5,7 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
 
 
 
-/* responsive Menu */
-const menu = document.querySelector('.menu');
-const offscreen = document.querySelector(".off-screen");
 
-menu.addEventListener('click', () => {
-	menu.classList.toggle('active');
-    offscreen.classList.toggle('active');
-
-});
 
 
 
