@@ -1,59 +1,4 @@
-@media only screen and (max-width: 30rem) {
-    #menu {
-        display: block;
-        font-size: 2rem;
-        font-weight:700;
-        text-decoration: none;
-        padding: .5rem .75rem;
-        background-color: #eee;
-        color: #000;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-    }
-    
-    #menu::before {
-        content: "≡";
-    }
-    
-    nav {
-        background-color: tomato;
-    }
-    .navigation {
-        list-style: none;
-        margin: 0 auto;
-        max-width: 760px;
-    }
-    
-    .navigation li {
-        display: none;
-    }
-    .navigation a {
-        display: block;
-        padding: 0.75rem;
-        text-align: center;
-        text-decoration: none;
-        color: black;
-        font-weight: 700;
-        transition: 0.5s;
-        font-size: clamp(1rem, 2vmin, 1.5rem);
-    }
-    
-    .navigation a:hover, navigation a:active {
-        color: white;
-        background-color: black;
-    }
-    
-    .show li {
-        display: block;
-    }
-    
-    #menu.show::before {
-        content: "X";
-    }
-    
-    
-}
+
 *{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -61,29 +6,8 @@
 h1 span{
     color: brown;
 }
-/* header */
 
-header{
-    display: flex;
-    font-size: medium;
-    border: 0.2rem solid brown;
-    border-color: brown;
-    justify-content: center;
-    align-items: center;
-}
 
-header img{
-    height: 4rem;
-    padding: 1rem;
-    
-    
-}
-
-#sided{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 /* Main */
 main{
@@ -94,11 +18,13 @@ main{
     background-color: brown;
     text-align: center;
     font-size: xx-large;
+    color: #eee;
 }
 
 #boardroom {
     opacity: 0;
     animation: fadeIn 3s forwards;
+    padding-top: 20px ;
 }
 
 @keyframes fadeIn {
@@ -133,6 +59,8 @@ figure figcaption button:hover {
 
 .events{
     height: 100%;
+    width: 100%;
+    background-color: rgb(165, 42, 42, 0.5);
 }
 
 .blue{
@@ -140,6 +68,7 @@ figure figcaption button:hover {
     justify-content: center;
     text-align: center;
     font-size: x-large;
+    color: #eee;
 }
 
 #weather-icon {
@@ -231,49 +160,6 @@ footer p, h5{
 /* Responsive Sites */ 
 
 @media only screen and (min-width: 34rem) {
-    header{
-        display: flex;
-        font-size: large;
-        border: none;
-        text-align: center;
-        margin-left: 2rem;
-        margin-right: 2rem;
-            
-    }
-    #sided{
-        display: flex;
-    }
-    nav{
-        margin-left: 3rem;
-        margin-right: 3rem;
-        justify-content: space-evenly;
-    }
-    nav li {
-        display: inline;
-        padding-top: 1rem;
-        padding-bottom: 1rem ;
-        background-color: rgb(165, 42, 42, 0.8);
-        
-
-    }
-
-    nav li:hover{
-        background-color: black;
-        
-    }
-    nav a{
-        color: white;
-        font-style: oblique;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        align-items: center;
-        margin: 7rem;
-        text-align: center;
-    }
-
-    nav a:active{
-        color: blue;
-        
-    }
 
     /* main */
 
@@ -288,6 +174,19 @@ footer p, h5{
         position: absolute;
         bottom: 8px;
         right: 12px;
+        animation-duration: 3s;
+        animation-name: slidein;
+        
+    }
+    @keyframes slidein {
+        from{
+            translate: -150vh;
+            scale: 200% 1;
+        }
+        to{
+            translate: 0 0;
+            scale: 100% 1;
+        }
         
     }
     #flex{
@@ -340,17 +239,4 @@ footer p, h5{
         justify-content: center;
         
     }
-    .navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 100%;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	#menu {
-		display: none;
-	}
 }

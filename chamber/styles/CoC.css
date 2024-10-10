@@ -13,8 +13,8 @@
         top: 10px;
     }
     
-    #menu::before {
-        content: "≡";
+    header button::before {
+        content: "☰";
     }
     
     nav {
@@ -122,60 +122,8 @@ header img{
     font-size: medium;
 }
 
-.blue{
-        text-align: center;
-        color: #fff;
-}
 
-.events{
-    margin: 2rem;
-}
-.blue{
-    background-color: brown;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    height: 100%;
-}
-#weather-card{
-    align-items: center;
-    padding-bottom: 10px;
-    margin: 2rem;
-}
 
-.flex{
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    font-size: large;
-    font-weight: bold;
-}
-
-.weather-table{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.weatherForecast{
-    align-items: center;
-    padding-bottom: 10px;
-    margin: 2rem;
-}
-
-#weatherForecast{
-    display: flex;
-    padding-bottom: 10px;
-    text-align: right;
-    justify-content: center;
-    font-size: large;
-    font-weight: bold;
-}
-#weather-icon {
-    max-width: 25%;
-    
-}
-    
 
     /* Footer */
 footer {
@@ -325,42 +273,6 @@ footer p, h5{
         
     }
 
-    .events{
-        border: 5px solid;
-        width: 100%;
-        border-radius: 20px;
-    }
-    #weather-card{
-        border: 5px solid;
-        width: 100%;
-        border-radius: 20px;
-    }
-    
-    .weather-table{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .weatherForecast{
-        border: 5px solid;
-        width: 100%;
-        border-radius: 20px;
-    }
-    
-    #weatherForecast{
-        display: flex;
-        padding-bottom: 10px;
-        text-align: right;
-        justify-content: center;
-        font-size: large;
-        font-weight: bold;
-    }
-
-
-
-    
 }
 
 #view  {
@@ -467,3 +379,77 @@ footer p, h5{
     justify-content: center;
     
 }
+
+
+.card {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

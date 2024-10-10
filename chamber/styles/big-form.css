@@ -1,0 +1,63 @@
+@media only screen and (min-width: 30rem){
+
+    main{
+        display: flex;
+    }
+    
+.normal{
+    animation-duration: 3s;
+    animation-name: slideright;
+}
+
+.bronze{
+    background-color: rgb(206, 137, 70);
+    animation-duration: 3s;
+    animation-name: slideleft;
+}
+
+.silver{
+    background-color: rgb(192,192,192);
+    animation-duration: 3s;
+    animation-name: slideright;
+}
+
+.premium{
+    background-color: gold;
+    animation-duration: 3s;
+    animation-name: slideleft;
+}
+
+
+@keyframes slideleft {
+    from{
+        translate: -1000vh;
+        scale: 200% 1;
+    }
+    to{
+        translate: 0 0;
+        scale: 100% 1;
+    }
+    
+}
+
+@keyframes slideright {
+    from{
+        translate: 1000vh;
+        scale: 200% 1;
+    }
+    to{
+        translate: 0 0;
+        scale: 100% 1;
+    }
+    
+}
+
+.section{
+    display:grid;
+    align-items: center;
+    margin-left: 15rem;
+    margin-top: 5rem;
+    width: 100%;
+}
+    
+}
