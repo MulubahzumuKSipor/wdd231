@@ -1,7 +1,20 @@
-@media only screen and (min-width: 34rem) {
+@media only screen and (min-width: 30rem) {
 
     header{
         display: flex;
     }
+    
+    
+}
+
+#text{
+    margin: 3rem;
+    display: block;
+}
+#results{
+    display: block;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
     
 }
