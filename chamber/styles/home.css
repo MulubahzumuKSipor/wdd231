@@ -71,7 +71,7 @@ figure figcaption button:hover {
     color: #eee;
 }
 
-#weather-icon {
+.weather-icon {
     max-width: 10%;
     
 }
