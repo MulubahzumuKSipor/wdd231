@@ -10,7 +10,7 @@
     <meta name="Author" content="Mulubahzumu Kemmeh Sipor">
     <meta property = "og:title" content="Chamber of Commerce">
     <meta property = "og:type" content="website">
-    <meta property = "og:image" src="images/monrovia.jpeg">
+    <meta property = "og:image" content="images/monrovia.jpeg">
     <meta property = "og:url" content="https://mulubahzumuksipor.github.io/wdd231/chamber/index.html">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -37,14 +37,16 @@
         <button id="menu"></button>
     </header>
     <nav class="navigation">
-        <li><a href="index.html">Homepage</a></li>
-        <li><a href="directory.html" class="active"> Directory</a></li>
-        <li><a href="">Discover</a></li>
-        <li><a href="join.html">Join</a></li>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="directory.html" class="active"> Directory</a></li>
+            <li><a href="">Discover</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
     </nav>
     <main>
         <figure>
-            <img id="boardroom" src="images/hero (2).webp" alt="Monrovia">
+            <img id="boardroom" src="images/hero(2).webp" alt="Monrovia">
             <figcaption><Button>Join</Button></figcaption>
         </figure>
         <h2 class="brownbg">Home</h2>
@@ -62,7 +64,7 @@
             </section>
 
             <section id="weather-card">
-                <h2 class="blue"><img id="weather-icon" src="images/weather.svg" alt="weather icon">Weather </h2>
+                <h2 class="blue"><img class="weather-icon" src="images/weather.svg" alt="weather icon">Weather </h2>
                 <div class="flex">
                     <p id="town"></p>
                     <img id="icon" src="" alt="">
@@ -74,7 +76,7 @@
                 </div>
             </section>
             <section id="weatherForecast">
-                <h2 class="blue"><img id="weather-icon" src="images/weather.svg" alt="weather icon">Weather Forecast</h2>
+                <h2 class="blue"><img class="weather-icon" src="images/weather.svg" alt="weather icon">Weather Forecast</h2>
                 <div id="forecast">
                     <p id="monday"></p>
                     <p id="tuesday"></p>
