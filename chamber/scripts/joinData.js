@@ -9,7 +9,7 @@ console.log(formData)
 function display(cup){
     formData.forEach(element => {
         if (element.startsWith(cup)){
-            results=element.split("=")[1].replace("%40","@")
+            results=element.split("=")[1].replace("%40","@").replace("%2B","+")
             results= results.replace("%27s+",".")
         }
     })
