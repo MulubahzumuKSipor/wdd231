@@ -10,7 +10,7 @@
     <meta name="Author" content="Mulubahzumu Kemmeh Sipor">
     <meta property = "og:title" content="Chamber of Commerce">
     <meta property = "og:type" content="website">
-    <meta property = "og:image" content="images/monrovia.jpeg">
+    <meta property = "og:image" src="images/monrovia.jpeg">
     <meta property = "og:url" content="https://mulubahzumuksipor.github.io/wdd231/chamber/index.html">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -21,6 +21,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
     <link rel="stylesheet" href="styles/CoC-responsive.css">
+    <link rel="stylesheet" href="styles/flip-card.css">
     <script src="scripts/fetc.js" defer ></script>    
     <link rel="stylesheet" href="styles/home.css">
     <script src="scripts/random.js" defer></script>
@@ -64,30 +65,48 @@
             </section>
 
             <section id="weather-card">
-                <h2 class="blue"><img class="weather-icon" src="images/weather.svg" alt="weather icon">Weather </h2>
-                <div class="flex">
-                    <p id="town"></p>
-                    <img id="icon">
-                    <p id="description"></p>
-                    <p id="temp"></p>
-                    <p id="windspeed"></p>
-                    <p id="humidity"></p>
-                    <p id="pressure"></p>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h2 class="blue"><img class="weather-icon" src="images/weather.svg" alt="weather icon">Weather </h2>
+                        </div>
+                        <div class="card-back">
+                            <div class="flex">
+                                <p id="town"></p>
+                                <img id="icon" src="" alt="">
+                                <p id="description"></p>
+                                <p id="temp"></p>
+                                <p id="windspeed"></p>
+                                <p id="humidity"></p>
+                                <p id="pressure"></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section id="weatherForecast">
-                <h2 class="blue"><img class="weather-icon" src="images/weather.svg" alt="weather icon">Weather Forecast</h2>
-                <div id="forecast">
-                    <p id="monday"></p>
-                    <p id="tuesday"></p>
-                    <p id="wednesday"></p>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h2 class="blue"><img class="weather-icon" src="images/weather.svg" alt="weather icon">Weather Forecast</h2>
+                        </div>
+                        <div class="card-back">
+                            <div id="forecast">
+                                <p id="monday"></p>
+                                <p id="tuesday"></p>
+                                <p id="wednesday"></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </section>
+
         <h2 class="center">Our most Prestigious Companies</h2>
+        
         <div id="cards" class="grids">
         
-        </div>
+</div>
         
     </main>
     <footer>
