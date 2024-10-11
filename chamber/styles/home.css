@@ -174,18 +174,15 @@ footer p, h5{
         position: absolute;
         bottom: 8px;
         right: 12px;
-        animation-duration: 3s;
-        animation-name: slidein;
+        animation: slidein 3s backwards;
         
     }
     @keyframes slidein {
-        from{
-            transform : translate(-150vh);
-            transform: scale(200% 1);
-        }
-        to{
-            transform: translate( 0 0);
-            transform: scale(100% 1);
+        0% {
+            transform: translateX(-1000%); /* Element starts off-screen */
+            }
+        100% {
+        transform: translateX(0); /* Element ends at its original position */
         }
         
     }

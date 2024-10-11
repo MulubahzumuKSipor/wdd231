@@ -6,50 +6,35 @@
     
 .normal{
     animation-duration: 3s;
-    animation-name: slideright;
+    animation-name: slideInFromTop;
 }
 
 .bronze{
     background-color: rgb(206, 137, 70);
     animation-duration: 3s;
-    animation-name: slideleft;
+    animation-name: slideInFromTop;
 }
 
 .silver{
     background-color: rgb(192,192,192);
     animation-duration: 3s;
-    animation-name: slideright;
+    animation-name: slideInFromTop;
 }
 
 .premium{
     background-color: gold;
     animation-duration: 3s;
-    animation-name: slideleft;
+    animation-name: slideInFromTop;
 }
 
 
-@keyframes slideleft {
-    from{
-        transform: translate(-1000vh);
-        transform: scale(200% 1);
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-500%); /* Starts off-screen above */
     }
-    to{
-        transform: translate(0 0);
-        transform: scale(100% 1);
+    100% {
+      transform: translateY(0); /* Slides down to original position */
     }
-    
-}
-
-@keyframes slideright {
-    from{
-        transform: translate(1000vh);
-        transform: scale(200% 1);
-    }
-    to{
-        transform: translate(0 0);
-        transform: scale(100% 1);
-    }
-    
 }
 
 .section{

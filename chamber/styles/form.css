@@ -216,48 +216,43 @@ font-size: 15px;
 
 .normal{
     animation-duration: 3s;
-    animation-name: slideright;
+    animation-name: slideInFromTop;
 }
 
 .bronze{
     background-color: rgb(206, 137, 70);
     animation-duration: 3s;
-    animation-name: slideleft;
+    animation-name: slidein;
 }
 
 .silver{
     background-color: rgb(192,192,192);
     animation-duration: 3s;
-    animation-name: slideright;
+    animation-name: slideInFromTop;
 }
 
 .premium{
     background-color: goldenrod;
     animation-duration: 3s;
-    animation-name: slideleft;
+    animation-name: slidein;
 }
 
 
-@keyframes slideleft {
-    from{
-        transform: translate(-100vh);
-        transform: scale(200% 1);
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-500%); /* Starts off-screen above */
     }
-    to{
-        transform: translate(0 0);
-        transform: scale(100% 1);
+    100% {
+      transform: translateY(0); /* Slides down to original position */
     }
-    
 }
 
-@keyframes slideright {
-    from{
-        transform: translate(100vh);
-        transform: scale(200% 1);
-    }
-    to{
-        transform: translate(0 0);
-        transform: scale(100% 1);
+@keyframes slidein {
+    0% {
+        transform: translateX(-1000%); /* Element starts off-screen */
+        }
+    100% {
+    transform: translateX(0); /* Element ends at its original position */
     }
     
 }
