@@ -35,10 +35,12 @@
         <button id="menu"></button>
     </header>
     <nav class="navigation">
-        <li><a href="index.html">Homepage</a></li>
-        <li><a href="directory.html" class="active"> Directory</a></li>
-        <li><a href="">Discover</a></li>
-        <li><a href="join.html">Join</a></li>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="directory.html" class="active"> Directory</a></li>
+            <li><a href="">Discover</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
     </nav>
     <main>
         <section>
@@ -62,7 +64,7 @@
                     <span>Email</span>
                 </label> 
                 <label>
-                    <input name="contact" class="input" type="telephone" placeholder="" required="" title="contact" autocomplete="tel">
+                    <input name="contact" class="input" type="tel" placeholder="" required="" title="contact" autocomplete="tel">
                     <span>Contact Number</span>
                 </label>                
                 <label>
@@ -71,7 +73,7 @@
                 </label>
                 <fieldset>
                     <label id="selection">Membership Level: 
-                        <select name="Members" id="membership" placeholder="None">
+                        <select name="Members" id="membership">
                             <option value="NP">Normal Participant</option>
                             <option value="Bronze">Bronze Membership</option>
                             <option value="Silver">Silver Membership</option>
@@ -108,7 +110,6 @@
                 </div>
             </div>
                 <span class="agreement"><a href="#">Learn user licence agreement</a></span>
-            </div>
         </section>
         <section>
             <div id="promoCards"></div>
@@ -125,7 +126,7 @@
                     <p id="info5"></p>
             </dialog>
         </section>
-        <script type="module" src="scripts/join.js" defer></script>
+        <script type="module" src="scripts/join.js" ></script>
     </main>
     <footer>
         <div>

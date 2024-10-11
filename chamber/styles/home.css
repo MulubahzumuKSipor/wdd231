@@ -189,10 +189,6 @@ footer p, h5{
         }
         
     }
-
-    ul{
-        display: flex;
-    }
     #flex{
         display: flex;
         gap: 20px;
