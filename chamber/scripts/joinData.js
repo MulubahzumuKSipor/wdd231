@@ -4,7 +4,7 @@ const dataUrl = window.location.href
 const data = dataUrl.split("?");
 
 const formData = data[1].split("&");
-
+console.log(formData)
 
 function display(cup){
     formData.forEach(element => {
@@ -26,6 +26,7 @@ const info3 = document.querySelector( "#info4")
 const info4 = document.querySelector( "#info5")
 const info5 = document.querySelector( "#info6")
 const info6 = document.querySelector( "#info7")
+const info8 = document.querySelector("#info9")
 
 
 info.innerHTML = `First name: ${display("first")}`
@@ -35,3 +36,6 @@ info3.innerHTML =`Email: ${ display("email")}`
 info4.innerHTML =`Contact: ${ display("contact")}`
 info5.innerHTML =`Organization name: ${ display("Organization")}`
 info6.innerHTML =`Membership Level: ${ display("Members")}`
+info8.textContent = `You joined: ${new Date().toLocaleString('en-US', { weekday: 'long', month: 'long', year: 'numeric', day: 'numeric' })}`;
+
+

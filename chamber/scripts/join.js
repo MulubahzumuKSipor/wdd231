@@ -56,11 +56,21 @@ const info2 = document.querySelector("#info2");
 const info3 = document.querySelector("#info3");
 const info4 = document.querySelector("#info4");
 const info5 = document.querySelector("#info5");
+const info6 = document.querySelector("#info6");
 const myTitle = document.querySelector("#title h2");
 
 
 
-closet.addEventListener('click', () => {modals.close();})
+closet.addEventListener('click', function() {
+    modals.close();})
+;
+
+
+window.addEventListener("click", function(event) {
+    if (event.target === modals) {
+        modals.close();
+    }
+});
 
 
 
@@ -73,6 +83,7 @@ function displayInfo(elements){
         info3.innerHTML = `${elements.benefits[2]}`
         info4.innerHTML = `${elements.benefits[3]}`
         info5.innerHTML = `${elements.benefits[4]}`
+        info6.innerHTML = `Price: ${elements.price}`
     
 };
 

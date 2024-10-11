@@ -18,18 +18,18 @@
     }
     
     nav {
-        background-color: tomato;
+        background-color: brown;
     }
-    .navigation {
+    .navigation a{
         list-style: none;
         margin: 0 auto;
         max-width: 760px;
     }
     
-    .navigation li {
+    .navigation a{
         display: none;
     }
-    .navigation a {
+    .show a {
         display: block;
         padding: 0.75rem;
         text-align: center;
@@ -43,10 +43,6 @@
     .navigation a:hover, navigation a:active {
         color: white;
         background-color: black;
-    }
-    
-    .show li {
-        display: block;
     }
     
     #menu.show::before {
@@ -197,38 +193,36 @@ footer p, h5{
             
     }
 
-    ul{
+    .navigation {
         display: flex;
-    }
-    #sided{
-        display: flex;
-    }
-
-    nav ul li {
-        display: inline;
-        padding-top: 1rem;
-        padding-bottom: 1rem ;
-        background-color: rgb(165, 42, 42, 0.8);
-    }
-
-    nav ul li:hover{
-        background-color: black;
-        
-    }
-
-    nav ul li a:hover{
-        color: #eee;
-    }
-    nav a{
+        width: 100%;
         color: white;
         font-style: oblique;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         align-items: center;
-        margin: 7rem;
         text-align: center;
+        justify-content: space-evenly;
     }
-    nav ul li a:hover{
-        color: brown;
+    .navigation a{
+        padding-top: 1rem;
+        padding-bottom: 1rem ;
+        background-color: rgb(165, 42, 42, 0.8);
+        width: 100%;
+        color: white;
+        font-style: oblique;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    nav a:hover{
+        background-color: black;
+        
+    }
+
+    nav a:hover{
+        color: #eee;
     }
 
     nav a:active{
@@ -381,7 +375,9 @@ footer p, h5{
 #first-text{
     font-size: large;
     justify-content: center;
-    
+    text-align: justify;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 
@@ -395,65 +391,69 @@ footer p, h5{
     padding: 25px 25px;
     gap: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
-  }
-  
-  /* for all social containers*/
-  .socialContainer {
-    width: 52px;
-    height: 52px;
-    background-color: rgb(44, 44, 44);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    transition-duration: .3s;
-  }
-  /* instagram*/
-  .containerOne:hover {
-    background-color: #d62976;
-    transition-duration: .3s;
-  }
-  /* twitter*/
-  .containerTwo:hover {
-    background-color: #00acee;
-    transition-duration: .3s;
-  }
-  /* linkdin*/
-  .containerThree:hover {
-    background-color: #0072b1;
-    transition-duration: .3s;
-  }
-  /* Whatsapp*/
-  .containerFour:hover {
-    background-color: #128C7E;
-    transition-duration: .3s;
-  }
-  
-  .socialContainer:active {
-    transform: scale(0.9);
-    transition-duration: .3s;
-  }
-  
-  .socialSvg {
+}
+
+/* for all social containers*/
+.socialContainer {
+width: 52px;
+height: 52px;
+background-color: rgb(44, 44, 44);
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover {
+background-color: #d62976;
+transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+background-color: #00acee;
+transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+background-color: #0072b1;
+transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+background-color: #128C7E;
+transition-duration: .3s;
+}
+
+.socialContainer:active {
+transform: scale(0.9);
+transition-duration: .3s;
+}
+
+.socialSvg {
     width: 17px;
-  }
-  
-  .socialSvg path {
+}
+
+.socialSvg path {
     fill: rgb(255, 255, 255);
-  }
-  
-  .socialContainer:hover .socialSvg {
+}
+
+.socialContainer:hover .socialSvg {
     animation: slide-in-top 0.3s both;
-  }
-  
-  @keyframes slide-in-top {
+}
+
+@keyframes slide-in-top {
     0% {
-      transform: translateY(-50px);
-      opacity: 0;
+        transform: translateY(-50px);
+        opacity: 0;
     }
-  
     100% {
-      transform: translateY(0);
-      opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
     }
-  }
+}
+
+.daily{
+    text-align: center;
+    font-size: 15px;
+}

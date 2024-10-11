@@ -82,13 +82,7 @@ figure figcaption button:hover {
     background-color: rgb(165, 42, 42, 0.4);
 }
 
-.flex{
-    display: grid;
-    color: black;
-    font-size: medium;
-    text-align: center;
-    justify-content: center;
-}
+
 
 #weatherForecast{
     text-align: center;
