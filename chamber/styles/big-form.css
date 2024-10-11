@@ -30,24 +30,24 @@
 
 @keyframes slideleft {
     from{
-        translate: -1000vh;
-        scale: 200% 1;
+        transform: translate(-1000vh);
+        transform: scale(200% 1);
     }
     to{
-        translate: 0 0;
-        scale: 100% 1;
+        transform: translate(0 0);
+        transform: scale(100% 1);
     }
     
 }
 
 @keyframes slideright {
     from{
-        translate: 1000vh;
-        scale: 200% 1;
+        transform: translate(1000vh);
+        transform: scale(200% 1);
     }
     to{
-        translate: 0 0;
-        scale: 100% 1;
+        transform: translate(0 0);
+        transform: scale(100% 1);
     }
     
 }

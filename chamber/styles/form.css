@@ -240,24 +240,24 @@ font-size: 15px;
 
 @keyframes slideleft {
     from{
-        translate: -100vh;
-        scale: 200% 1;
+        transform: translate(-100vh);
+        transform: scale(200% 1);
     }
     to{
-        translate: 0 0;
-        scale: 100% 1;
+        transform: translate(0 0);
+        transform: scale(100% 1);
     }
     
 }
 
 @keyframes slideright {
     from{
-        translate: 100vh;
-        scale: 200% 1;
+        transform: translate(100vh);
+        transform: scale(200% 1);
     }
     to{
-        translate: 0 0;
-        scale: 100% 1;
+        transform: translate(0 0);
+        transform: scale(100% 1);
     }
     
 }

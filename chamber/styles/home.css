@@ -180,12 +180,12 @@ footer p, h5{
     }
     @keyframes slidein {
         from{
-            translate: -150vh;
-            scale: 200% 1;
+            transform : translate(-150vh);
+            transform: scale(200% 1);
         }
         to{
-            translate: 0 0;
-            scale: 100% 1;
+            transform: translate( 0 0);
+            transform: scale(100% 1);
         }
         
     }
@@ -206,7 +206,6 @@ footer p, h5{
     
     #weatherForecast{
         width: 100%;
-        background-color: none;
     }
     
     #cards{
