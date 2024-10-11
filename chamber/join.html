@@ -56,7 +56,8 @@
                     <span>Last Name</span>
                 </label>
                 <label>
-                    <input name="organization-title" class="input" type="text" placeholder="" required title="First Name" autocomplete="organization-title">
+                    <input name="organization-title" class="input" type="text" placeholder="" required pattern="(?=.{7,})([a-zA-Z\s-]+)" 
+           title="Please enter at least 7 characters (letters, hyphens, and spaces only)." autocomplete="organization-title">
                     <span>Organization Title</span>
                 </label>
                 <label>
