@@ -200,19 +200,19 @@ footer p, h5{
         display: flex;
     }
 
-    nav li {
+    nav ul li {
         display: inline;
         padding-top: 1rem;
         padding-bottom: 1rem ;
         background-color: rgb(165, 42, 42, 0.8);
     }
 
-    nav li:hover{
+    nav ul li:hover{
         background-color: black;
         
     }
 
-    nav li a:hover{
+    nav ul li a:hover{
         color: #eee;
     }
     nav a{
@@ -223,7 +223,7 @@ footer p, h5{
         margin: 7rem;
         text-align: center;
     }
-    nav li a:hover{
+    nav ul li a:hover{
         color: brown;
     }
 
