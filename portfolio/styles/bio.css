@@ -1,0 +1,47 @@
+
+main{
+    display: flex;
+    
+}
+
+.pro5 img{
+    width: 15rem;
+    height: fit-content;
+    
+}
+
+aside{
+    display: grid;
+    position: relative;
+    display: block;
+    text-align: left;
+    max-width: 25rem;
+    padding: 10px;
+    border: 5px solid black;
+}
+aside img{
+    width: 7rem;
+    
+}
+
+h3{
+    font-size: larger;
+    text-decoration: underline;
+    text-align: center;
+}
+
+h2{
+    font-size: x-large;
+    text-align: center;
+    background-color: brown;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 34rem){
+    .pro5 img{
+        width: 10rem;
+        height: fit-content;
+        
+    }
+    
+}

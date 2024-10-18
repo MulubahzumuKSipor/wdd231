@@ -1,0 +1,177 @@
+:root {
+    --primary-color: #0e0004;
+    --secondary-color: #004346;
+    --accent1-color: #004fff;
+    --accent2-color: #87bfff;
+    --accent3-color: #b5446e;
+
+    --heading-font: "Bagel Fat One", serif;;
+    --paragraph-font: "Roboto", sans-serif;
+    --secondary-font: "Black Ops One", system-ui;
+
+    --nav-background-color: var(--accent2-color);
+    --nav-link-color:var(--primary-color);
+    --nav-hover-link-color:var(--accent2-color);
+    --nav-hover-background-color:var(--secondary-color);
+}
+
+*{
+    display: grid;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+header{
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+main{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-family: var(--heading-font);
+}
+h2{
+    font-family: var(--secondary-font);
+}
+p{
+    font-family: var(--paragraph-font);
+}
+#project{
+    border: none;
+    border-top: 10px solid var(--accent1-color);
+    margin-top: 20px;
+    padding-top: 20px ;
+}
+
+#project h2{
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+#project p{
+    font-size: large;
+}
+
+#scenarios{
+    margin-top: 20px;
+    padding-top: 20px;
+    border: none;
+    border-top: 10px solid var(--accent1-color);
+}
+#scenarios h2{
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+#scenarios p{
+    font-size: large;
+}
+
+#brand{
+    margin-top: 20px;
+    padding-top: 20px;
+    border: none;
+    border-top: 10px solid var(--accent1-color);
+}
+#brand h2{
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+#brand p{
+    font-size: large;
+}
+
+#style{
+    margin-top: 20px;
+    padding-top: 20px;
+    border: none;
+    border-top: 10px solid var(--accent1-color);
+}
+#style h2{
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+#style p{
+    font-size: large;
+}
+
+#first{
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+#second{
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+}
+#next{
+    background-color: var(--accent1-color);
+}
+#last{
+    background-color: var(--accent2-color);
+}
+
+#fonts{
+    margin-top: 20px;
+    padding-top: 20px;
+    border: none;
+    border-top: 10px solid var(--accent1-color);
+}
+#fonts h1{
+    background-color: var(--primary-color);
+    color: var(--accent3-color);
+}
+
+#fonts h2{
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+#fonts p{
+    font-family: var(--paragraph-font);
+    font-size: large;
+    background-color: var(--accent2-color);
+}
+
+
+#wireframe{
+    margin-top: 30px;
+    padding-top: 30px;
+    border: none;
+    border-top: 10px solid var(--accent1-color);
+}
+#wireframe h1{
+    background-color: var(--primary-color);
+    color: var(--accent3-color);
+}
+
+#wireframe h2{
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+#wireframe p{
+    font-family: var(--paragraph-font);
+    font-size: large;
+    background-color: var(--accent2-color);
+}
+
+#icon{
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+#wireframe{
+    justify-content: center;
+}
+#wireframe img{
+    width: 75%;
+    height: auto;
+    
+}
