@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="This website will serve as a resource hub for businesses in the city of Timbuktu. 
+    <meta name="Description" content="This website will serve as a resource hub for businesses in the city of Paynesville. 
                                         The site will provide information on local events, host networking opportunities, 
                                         create business directories, and encourage local shopping. It aims to promote local 
                                         economic growth, support local businesses, and foster a sense of community between the businesses.">
     <meta name="Author" content="Mulubahzumu Kemmeh Sipor">
     <meta property = "og:title" content="Chamber of Commerce">
     <meta property = "og:type" content="website">
-    <meta property = "og:image" content="images/monrovia.jpeg">
+    <meta property = "og:image" content="../images/monrovia.jpeg">
     <meta property = "og:url" content="https://mulubahzumuksipor.github.io/wdd231/chamber/index.html">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -32,22 +32,23 @@
 <body> 
     <header>
         <div id="sided">
-            <a href="directory.html"><img src="images/study-icon.svg" alt="Baddest-Icon"></a> 
+            <a href="index.html"><img src="images/convert.webp" alt="Baddest-Icon"></a> 
             <h1>S.Sweats <br> <span>Chamber of Commerce</span></h1>
         </div>
         <button id="menu"></button>
+        <nav class="navigation">
+            <a href="index.html">Homepage</a>
+            <a href="directory.html" class="active"> Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discovery.html">Discover</a>
+        </nav>
     </header>
-    <nav class="navigation">
-        <a href="index.html">Homepage</a>
-        <a href="directory.html" class="active"> Directory</a>
-        <a href="">Discover</a>
-        <a href="join.html">Join</a>
-    </nav>
-    <main>
-        <figure>
-            <img id="boardroom" src="images/hero(2).webp" alt="Monrovia">
-            <figcaption><a href="join.html"><Button>Join</Button></a></figcaption>
-        </figure>
+    <figure>
+        <img id="boardroom" src="images/heroes.webp" alt="Monrovia">
+        <figcaption id="text">Make that <span> business dream</span> a reality "!!"</figcaption>
+        <figcaption><a href="join.html"><Button>Join Now</Button></a></figcaption>
+    </figure>
+    <main>        
         <h2 class="brownbg">Home</h2>
         <section id="flex">
             <section class="home">
@@ -61,7 +62,6 @@
                     </ul>
                 </div>
             </section>
-
             <section id="weather-card">
                 <h2 class="blue"><img class="weather-icon" src="images/weather.svg" alt="weather icon">Weather </h2>
                 <div class="daily">
@@ -87,8 +87,8 @@
         <h2 class="center">Our most Prestigious Companies</h2>
         
         <div id="cards" class="grids">
-        
-</div>
+
+        </div>
         
     </main>
     <footer>

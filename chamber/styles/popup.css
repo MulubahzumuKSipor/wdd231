@@ -1,0 +1,159 @@
+body {
+    align-items: flex-start; /* Align items to the top */
+    justify-content: center;
+    background: url('../images/background.jpg') no-repeat center center fixed; /* Use a background image */
+    background-size: cover; /* Cover the entire background */
+}
+
+@media only screen and (max-width: 30rem) {
+    #menu {
+        display: block;
+        font-size: 2rem;
+        font-weight:700;
+        text-decoration: none;
+        padding: .5rem .75rem;
+        background-color: #eee;
+        color: #000;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    
+    header button::before {
+        content: "☰";
+    }
+    
+    nav {
+        background-color: darkblue;
+        
+    }
+    .navigation a{
+        list-style: none;
+        margin: 0 auto;
+        max-width: 760px;
+    }
+    
+    .navigation a{
+        display: none;
+    }
+    .show a {
+        display: block;
+        padding: 0.75rem;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
+        font-size: clamp(1rem, 2vmin, 1.5rem);
+        animation: slide-in-top 1s both;
+        transition: 2s ease-out;
+    }
+    
+    .navigation a:hover, navigation a:active {
+        color: white;
+        background-color: black;
+    }
+    
+    #menu.show::before {
+        content: "X";
+    }
+    
+    
+}
+
+@media only screen and (min-width: 34rem) {
+    #menu{
+        display: none;
+    }
+    header{
+        display: flex;
+        font-size: large;
+        border: none;
+        text-align: center;
+        border-bottom: 5px solid darkblue;
+        
+    }
+
+    .navigation {
+        display: flex;
+        width: 45%;
+        color: white;
+        font-style: oblique;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    .navigation a{
+        padding-top: 1rem;
+        padding-bottom: 1rem ;
+        width: 100%;
+        color: black;
+        font-style: oblique;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    nav a:hover{
+        background-color: black;
+        border-radius: 10px;
+        
+    }
+
+    nav a:hover{
+        color: blue;
+    }
+
+    nav a:active{
+        color: darkblue;
+        
+    }
+
+    
+
+    #flex{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    main{
+        margin: 4rem;
+    }
+    .slider img{
+        width: 100%;
+        padding-left: 20px;
+        
+
+    }
+    .slider p{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    section:hover img{
+        transform: scale(1.1);
+    }
+}
+
+.slider{
+    display: grid;
+    
+}
+
+#image-slider img {
+    transition: transform 0.5s ease;
+    justify-content: center;
+}
+
+h2{
+    color: white;
+    background-color: blue;
+    text-align: center;
+} 
+h4 {
+    color: black; /* Text color */
+}
+
+
+

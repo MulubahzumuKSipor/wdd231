@@ -4,67 +4,71 @@
 }
 
 h1 span{
-    color: brown;
+    color: darkblue;
 }
 
 
 
 /* Main */
-main{
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
+
 .brownbg{
-    background-color: brown;
+    background-color: darkblue;
     text-align: center;
     font-size: xx-large;
     color: #eee;
 }
 
-#boardroom {
-    opacity: 0;
-    animation: fadeIn 3s forwards;
-    padding-top: 20px ;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
 
 figure{
-    position:relative;
-    margin: 0;
+    position: relative;
 }
 
 figure img{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 figure figcaption button{
     font-size: larger;
-    border: 2px solid brown;
     position: absolute;
-    bottom: 8px;
-    right: 12px;
+    top: 50%;
+    right: 35%;
+    animation: slide-in-top 3s forwards;
+    
     
 }
-
+#text {
+    font-size: larger;
+    position: absolute;
+    width: 100%;
+    top: -10%;
+    left: -12%;
+    text-align: center;
+    color: #eee;
+    animation: slide-in-top 3s forwards;
+    
+    
+}
+#text span{
+    text-decoration: double overline white;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: algerian;
+}
 figure figcaption button:hover {
     background-color: brown;
     color: white;
+    box-shadow: 2px 2px grey;
 }
 
 .events{
     height: 100%;
     width: 100%;
-    background-color: rgb(165, 42, 42, 0.5);
+    background-color: rgb(0, 0, 255, 0.3);
 }
 
 .blue{
-    background-color: brown;
+    background-color: darkblue;
     justify-content: center;
     text-align: center;
     font-size: x-large;
@@ -79,14 +83,14 @@ figure figcaption button:hover {
 #weather-card{
     padding-bottom: 10px;
     display: grid;
-    background-color: rgb(165, 42, 42, 0.4);
+    background-color: rgb(0, 0, 255, 0.5);
 }
 
 
 
 #weatherForecast{
     text-align: center;
-    background-color: rgb(165, 42, 42, 0.4);
+    background-color: rgb(0, 0, 255, 0.3);
 }
 
 .center{
@@ -97,9 +101,8 @@ figure figcaption button:hover {
 
 .cardSection {
     max-width: 300px;
-    box-shadow: 0 0 10px rgb(165, 42, 42, 0.4);
+    box-shadow: 0 0 10px rgb(0, 0, 255, 0.4);
     min-height: 150px;
-    border: 2px solid brown;
     justify-content: center;
     gap: 1rem;
     text-align: center;
@@ -113,11 +116,10 @@ figure figcaption button:hover {
 
 /* footer */
 footer {
-    border: 0.5rem solid brown;
-    border-radius: 1rem;
-    border-color: brown;
-    border-radius: 1rem;
+    border: 0.5rem solid darkblue;
+    border-color: darkblue;
     text-align: center;
+    padding-top: 40px;
     
 }
 
@@ -153,33 +155,34 @@ footer p, h5{
 
 /* Responsive Sites */ 
 
-@media only screen and (min-width: 34rem) {
+@media only screen and (min-width: 30rem) {
 
     /* main */
-
     main{
-        margin-left: 6rem;
-        margin-right: 6rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
     }
+
 
     figure figcaption button{
         font-size: xx-large;
-        border: 2px solid brown;
         position: absolute;
-        bottom: 8px;
-        right: 12px;
-        animation: slidein 3s backwards;
+        top: 50%;
+        left: 30%;
+        animation: slide-in-top 3s forwards;
         
     }
-    @keyframes slidein {
-        0% {
-            transform: translateX(-1000%); /* Element starts off-screen */
-            }
-        100% {
-        transform: translateX(0); /* Element ends at its original position */
-        }
+    #text {
+        font-size: xx-large;
+        position: absolute;
+        top: 35%;
+        left: -7%;
+
+        animation: slide-in-top 3s forwards;
         
     }
+
+    
     #flex{
         display: flex;
         gap: 20px;
@@ -210,23 +213,14 @@ footer p, h5{
         display: flex;
         font-size: large; 
         justify-content: space-evenly;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        border: none;
+        border-top: 0.5rem solid darkblue;
+        text-align: center;
     }
     
     footer p{
         text-align: center;
         font-size: larger;
     }
-    .footerIma{
-        display: flex; 
-        
-    }
-    
-    .footerIma img{
-        padding: 15px;
-        width: 100px;
-        justify-content: center;
-        
-    }
+
 }

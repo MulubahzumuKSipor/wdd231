@@ -18,7 +18,8 @@
     }
     
     nav {
-        background-color: brown;
+        background-color: darkblue;
+        
     }
     .navigation a{
         list-style: none;
@@ -59,14 +60,13 @@
 }
 
 h1 span{
-    color: brown;
+    color: darkblue;
 }
 
 header{
-    display: flex;
+    display: block;
     font-size: medium;
-    border: 0.2rem solid brown;
-    border-color: brown;
+    border-color: darkblue;
     justify-content: center;
     align-items: center;
 }
@@ -85,75 +85,10 @@ header img{
 }
 
 
-
-.imageContain img{
-    width: 100%;
-    height: auto;
-}
-
-.imageContain{
-    position: relative;
-    text-align: center;
-    color: #fff;
-}
-
-.imageContain figcaption{
-    position: relative;
-    bottom: 100%;
-    left: 20%;
-    
-    }
-
-.imageContain button {
-    background-color: lightslategray;
-    color: #fff;
-    box-shadow: 3px 3px lightslategray;
-    
-}
-
-.imageContain button:hover {
-    background-color: brown;
-    color: black;
-    
-}
-.imageContain button h3{ 
-    font-size: medium;
-}
-
-
-
-
     /* Footer */
-footer {
-    border: 0.5rem solid brown;
-    border-radius: 1rem;
-    border-color: brown;
-    
-    border-radius: 1rem;
-    text-align: center;
-    
-}
 
 
 
-footer p{
-    text-align: left;
-}
-.footerIma{
-    display: flex; 
-    
-}
-
-.footerIma img{
-    padding-left: 15px;
-    width: 80px;
-    height: 80px;
-
-}
-
-footer p, h5{
-    padding-left: 15px
-}
 
 #modified{
     font-weight: bolder;
@@ -190,14 +125,13 @@ footer p, h5{
         font-size: large;
         border: none;
         text-align: center;
-        margin-left: 2rem;
-        margin-right: 2rem;
-            
+        border-bottom: 5px solid darkblue;
+        
     }
 
     .navigation {
         display: flex;
-        width: 100%;
+        width: 45%;
         color: white;
         font-style: oblique;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -208,9 +142,8 @@ footer p, h5{
     .navigation a{
         padding-top: 1rem;
         padding-bottom: 1rem ;
-        background-color: rgb(165, 42, 42, 0.8);
         width: 100%;
-        color: white;
+        color: black;
         font-style: oblique;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         align-items: center;
@@ -220,26 +153,17 @@ footer p, h5{
 
     nav a:hover{
         background-color: black;
+        border-radius: 10px;
         
     }
 
     nav a:hover{
-        color: #eee;
+        color: blue;
     }
 
     nav a:active{
-        color: blue;
+        color: darkblue;
         
-    }
-
-    
-    body{
-        margin-left: 3rem;
-        margin-right: 3rem;
-    }
-    main{
-        margin-left: 3rem;
-        margin-right: 3rem;
     }
 
     .list {
@@ -255,22 +179,19 @@ footer p, h5{
         display: flex;
         font-size: large; 
         justify-content: space-evenly;
+        border: none;
+        border-top: 0.5rem solid darkblue;
+        text-align: center;
     }
     
     footer p{
         text-align: center;
         font-size: larger;
-    }
-    .footerIma{
-        display: flex; 
-        
+        padding-bottom: 40px;
     }
     
-    .footerIma img{
-        padding: 15px;
-        width: 100px;
-        justify-content: center;
-        
+    footer {
+        padding-top: 40px;
     }
 
 }
@@ -284,8 +205,8 @@ footer p, h5{
 
 #view  button {
     padding: 0.5rem 1rem;
-    border: 1px solid brown;
-    color: brown;
+    border: 1px solid darkblue;
+    color: darkblue;
     background-color: white;
     cursor: pointer;
     border-radius: 5px;
@@ -293,12 +214,12 @@ footer p, h5{
 }
 
 #view  button:hover {
-    background-color: brown;
+    background-color: darkblue;
     color: white;
 }
 
 #view  button.active {
-    background-color: brown;
+    background-color: darkblue;
     color: white;
 }
 
@@ -319,7 +240,7 @@ footer p, h5{
     max-width: 300px;
     padding: 0.3rem;
     margin-inline: 1rem;
-    box-shadow: 0 0 10px rgb(165, 42, 42, 0.4);
+    box-shadow: 0 0 10px rgb(0, 0, 255, 0.4);
     min-height: 150px;
 }
 
@@ -350,11 +271,11 @@ footer p, h5{
 }
 
 #cards.list .company:nth-child(odd) {
-    background-color: brown; 
+    background-color: darkblue; 
 }
 
 #cards.list .company:hover {
-    background-color: darksalmon;
+    background-color: rgb(122, 155, 233);
     cursor: default;
 }
 
@@ -393,6 +314,7 @@ footer p, h5{
     padding: 25px 25px;
     gap: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+    padding-top: 20px;
 }
 
 /* for all social containers*/
@@ -459,3 +381,5 @@ transition-duration: .3s;
     text-align: center;
     font-size: 15px;
 }
+
+
