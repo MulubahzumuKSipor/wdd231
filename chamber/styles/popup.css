@@ -1,7 +1,6 @@
 body {
     align-items: flex-start; /* Align items to the top */
     justify-content: center;
-    background: url('../images/background.jpg') no-repeat center center fixed; /* Use a background image */
     background-size: cover; /* Cover the entire background */
 }
 
@@ -135,7 +134,18 @@ body {
         transform: scale(1.1);
     }
 }
+main{
+    margin: 2rem;
+}
+.slider img{
+    width: 100%;
+    
 
+}
+.slider p{
+    text-align: center;
+    padding-bottom: 30px;
+}
 .slider{
     display: grid;
     
@@ -145,6 +155,7 @@ body {
     transition: transform 0.5s ease;
     justify-content: center;
 }
+
 
 h2{
     color: white;
@@ -157,3 +168,18 @@ h4 {
 
 
 
+header{
+    border-bottom: 5px solid darkblue;
+    
+}
+
+footer div{
+    margin-left: 1rem;
+    border: none;
+}
+
+footer{
+    background-color: darkblue;
+    color: #eee;
+    border-top: 5px solid darkblue;
+}

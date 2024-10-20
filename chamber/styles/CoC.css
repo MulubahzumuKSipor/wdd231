@@ -190,12 +190,28 @@ header img{
         padding-bottom: 40px;
     }
     
-    footer {
-        padding-top: 40px;
-    }
 
 }
 
+main{
+    margin: 2rem;
+}
+
+header{
+    border-bottom: 5px solid darkblue;
+    
+}
+
+footer div{
+    margin-left: 1rem;
+    border: none;
+}
+
+footer{
+    border-top: 5px solid darkblue;
+    background-color: darkblue;
+    color: #eee;
+}
 #view  {
     display: flex;
     justify-content: center;
