@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Description"
+      content="Liberian front-end developer passionate about creating clean, efficient, and
+    responsive designs. Specialize in building interfaces with a focus on
+    user experience and sharp design patterns"
+    />
+    <meta name="Author" content="Mulubahzumu Kemmeh Sipor" />
+    <meta property="og:title" content="Mulubahzumu Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./images/icons.webp" />
+    <meta
+      property="og:url"
+      content="https://mulubahzumuksipor.github.io/portfolio/index.html"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script type="module" src="scripts/displaySkill.js" ></script>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons.ico" />
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <script src="scripts/responsive_menu.js" defer></script>
+    <title>Mulubahzumu Kemmeh Sipor</title>
+  </head>
+  <body>
+    <header>
+      <div id="sided">
+        <a href="index.html"
+          ><img src="images/icons.webp" alt="Baddest-Icon"
+        /></a>
+      </div>
+      <button id="menu" type="button"></button>
+      <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="project.html">Projects</a>
+        <a href="certificate.html">Certificates</a>
+        <a href="contactus.html">Contact me</a>
+      </nav>
+    </header>
+    <main>
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skillCards"></div>
+        <div class="skillCards"></div>
+      </section>
+      <section>
+        <h2>Projects</h2>
+        <div id="projectCards"></div>
+        <dialog id="projectModal" class="modal">
+          <div id="projectTitle">
+            <h2></h2>
+            <button class="close-button" name="close modal" type="button">
+              ❌
+            </button>
+          </div>
+          <p id="inf1"></p>
+          <p id="inf2"></p>
+        </dialog>
+      </section>
+      <script type="module" src="scripts/displayCertificates.js"></script>
+      <script type="module" src="scripts/displayProjects.js"></script>
+    </main>
+    <footer>
+      <div>
+        <p>
+          <span id="modified">Mulubahzumu Kemmeh Sipor <br />
+          sip23001@byui.edu <br />
+          (231) 886-678-786
+        </p>
+      </div>
+      <div class="card">
+        <a href="https://linkedin.com" aria-label="LinkedIn Profile"><img src="images/linkedIn.svg" alt="LinkedIn"></a>
+        <a href="https://web.facebook.com/mulubahzumukemmeh.sipor" aria-label="Facebook profile"><img src="images/facebook.svg" alt="Facebook"></a>
+        <a href="https://github.com/MulubahzumuKSipor" aria-label="github Profile"><img src="images/github-icon.svg" alt=""> </a>
+      </div>
+      <div>
+        <p>
+          WDD231 Class Project <br />
+          Mulubahzumu Kemmeh Sipor <br />
+          ©<span id="year"></span> Mulubahzumu Portfolio <br />
+          <span id="last_modified"></span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
