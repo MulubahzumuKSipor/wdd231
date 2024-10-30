@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Liberian front-end developer passionate about clean, efficient, and responsive designs."
+    />
+    <meta name="author" content="Mulubahzumu Kemmeh Sipor" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/portfolio.css" />
+    <link rel="stylesheet" href="styles/min-portfolio.css" />
+    <script type="module" src="scripts/displayCertificates.js"></script>
+    <script src="scripts/responsive_menu.js" defer></script>
+    <title>Mulubahzumu Kemmeh Sipor - Portfolio</title>
+  </head>
+  <body>
+    <!-- Sticky Header with Navigation -->
+    <header class="sticky-header">
+      <div id="logo">
+        <a href="index.html"
+          ><img src="images/icons.webp" alt="Portfolio Logo"
+        /></a>
+      </div>
+      <button id="menu" type="button" aria-label="Menu Button"></button>
+      <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="skill.html">Skills</a>
+        <a href="project.html">Projects</a>
+        <a href="certificate.html">Certificates</a>
+        <a href="contactus.html">Contact</a>
+      </nav>
+    </header>
+    <!-- Certificates Section with Hover Details -->
+    <section id="certificates" class="certificates-section">
+      <h2>Certificates</h2>
+      <div class="certificates-grid">
+        <div id="promoCards"></div>
+      </div>
+    </section>
+
+    <!-- Footer with Social Links -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>Mulubahzumu Kemmeh Sipor | sip23001@byui.edu | (231) 886-678-786</p>
+        <div class="social-links">
+          <a href="https://linkedin.com" aria-label="LinkedIn Profile"
+            ><img src="images/linkedIn.svg" alt="LinkedIn"
+          /></a>
+          <a
+            href="https://web.facebook.com/mulubahzumukemmeh.sipor"
+            aria-label="Facebook Profile"
+            ><img src="images/facebook.svg" alt="Facebook"
+          /></a>
+          <a
+            href="https://github.com/MulubahzumuKSipor"
+            aria-label="GitHub Profile"
+            ><img src="images/github-icon.svg" alt="GitHub"
+          /></a>
+        </div>
+      </div>
+      <p>
+        © <span id="year"></span> Mulubahzumu Kemmeh Sipor. All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>
