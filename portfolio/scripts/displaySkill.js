@@ -8,7 +8,7 @@ function display(aList) {
   projectContainer.innerHTML = "";
   aList.forEach((element) => {
     const container = document.createElement("section");
-    container.classList.add("section");
+    container.classList.add("skillSection");
 
     const titleTag = document.createElement("p");
     const img = document.createElement("img");

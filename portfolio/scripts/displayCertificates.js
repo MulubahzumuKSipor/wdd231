@@ -1,4 +1,4 @@
-import { certificatesInfo } from "./join.mjs";
+import { certificatesInfo } from "./certificatesInfo.mjs";
 
 const certificates = certificatesInfo;
 
@@ -11,23 +11,21 @@ function display(aList) {
   infoContainer.innerHTML = "";
   aList.forEach((element) => {
     const container = document.createElement("section");
-    container.classList.add("skillSection");
+    container.classList.add("certificateSection");
 
     const titleTag = document.createElement("p");
-    const buttonTag = document.createElement("button");
-
     const title = `${element.name}`;
-    const buttons = "Learn more";
 
     titleTag.innerHTML = title;
-    buttonTag.innerHTML = buttons;
-
-    buttonTag.addEventListener("click", () => {
-      displayInfo(element);
-    });
+    const img = document.createElement("img");
+    img.src = element.icons;
+    img.alt = element.name + " Certificate";
+    img.loading = "lazy";
+    img.width = 200;
+    img.height = 200;
 
     container.appendChild(titleTag);
-    container.appendChild(buttonTag);
+    container.appendChild(img);
 
     infoContainer.append(container);
   });
@@ -35,37 +33,11 @@ function display(aList) {
 
 display(certificatesInfo);
 
-/* As screen loads */
-document.addEventListener("DOMContentLoaded", () => {
-  const randomCards = fetchRandomCertificates(certificatesInfo);
-  display(randomCards);
-});
-
-/* Fetch random certificates */
-function fetchRandomCertificates(cards) {
-  const randomCertificates = certificatesInfo
-    .sort(() => 0.5 - Math.random())
-    .slice(0, 3);
-
-  return randomCertificates.sort(() => 0.5 - Math.random());
-}
-
 /* Collect all necessary data */
 const info1 = document.querySelector("#info1");
 const info2 = document.querySelector("#info2");
 const info3 = document.querySelector("#info3");
 const myTitle = document.querySelector("#title h2");
-
-/* Close modal when button clicked */
-closet.addEventListener("click", function () {
-  modals.close();
-});
-
-window.addEventListener("click", function (event) {
-  if (event.target === modals) {
-    modals.close();
-  }
-});
 
 /* Change original elements */
 function displayInfo(elements) {

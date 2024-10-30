@@ -1,3 +1,46 @@
+@media screen and (max-width: 30rem) {
+  #unseen {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  #unseen::before {
+    content: "☰";
+  }
+
+  #unseen.open::before {
+    content: "❌";
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+  }
+
+  .menu a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid greenyellow;
+  }
+  header nav a:hover {
+    background-color: darkblue;
+  }
+  .open a {
+    display: block;
+  }
+}
+
 /* Normalize styles */
 * {
   margin: 0;
@@ -11,7 +54,7 @@ html {
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #121212; /* Dark background */
+  background-color: #101720; /* Dark background */
   color: #ffffff; /* White text */
 }
 
@@ -19,7 +62,7 @@ body {
 .sticky-header {
   position: sticky;
   top: 0;
-  background-color: #1e1e1e; /* Darker header */
+  background-color: #100d08; /* Darker header */
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -76,8 +119,8 @@ body {
   margin-bottom: 20px;
 }
 
-.cta-button {
-  background-color: #00bcd4; /* Button color */
+.cta-button button {
+  background-color: #0c0c0c; /* Button color */
   color: #ffffff; /* White text */
   padding: 10px 20px;
   border: none;
@@ -86,13 +129,31 @@ body {
   font-weight: bold;
 }
 
-.cta-button:hover {
+.cta-button button:hover {
   background-color: #0097a7; /* Darker on hover */
 }
 
 /* Skills Section */
+.skillCards {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  text-align: center;
+  animation: scroll 20s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(calc(100%));
+  }
+  100% {
+    transform: translateX(calc(-100%));
+  }
+}
+
+.skillCards {
+}
 .skills-section {
-  padding: 40px 20px;
+  padding: 60px 40px;
   background-color: #1e1e1e; /* Dark background for skills */
 }
 
@@ -134,6 +195,10 @@ body {
   cursor: pointer; /* Indicate clickable */
   transition: transform 0.3s; /* Animation on hover */
 }
+.project-card img {
+  width: 60%;
+  height: auto;
+}
 
 .project-card:hover {
   transform: scale(1.05); /* Slightly enlarge on hover */
@@ -144,13 +209,15 @@ body {
 }
 
 /* Certificates Section */
-.certificates-section {
-  padding: 40px 20px;
+#promoCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  text-align: center;
 }
 
-.certificates-grid {
-  display: flex;
-  justify-content: space-around;
+#certificates {
+  text-align: center;
   flex-wrap: wrap; /* Wrap on smaller screens */
 }
 
@@ -214,7 +281,7 @@ body {
 
 /* Footer styles */
 .footer {
-  background-color: #1e1e1e; /* Dark footer */
+  background-color: #100d08; /* Dark footer */
   padding: 20px;
   text-align: center;
 }
@@ -226,6 +293,9 @@ body {
 .social-links a {
   margin: 0 10px; /* Space between icons */
 }
+.social-links img {
+  width: 5%;
+}
 
 /* Modal styles */
 .project-modal {
@@ -235,4 +305,290 @@ body {
   padding: 20px;
   max-width: 500px; /* Max width for modal */
   margin: auto; /* Center modal */
+}
+
+/* Form */
+figcaption {
+  font-size: small;
+  color: black;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  justify-content: center;
+}
+
+.message {
+  color: #00bcd4;
+  font-size: large;
+  font-weight: bold;
+}
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  color: #00bcd4;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #eee;
+}
+
+.message,
+.signin {
+  font-size: 14.5px;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.signin a {
+  color: #00bcd4;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  background-color: white;
+  color: black;
+  width: 100%;
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  color: black;
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+  color: darkblue;
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.input {
+  font-size: medium;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  font-size: 16px;
+  transform: 0.3s ease;
+  background-color: burlywood;
+  width: 100%;
+}
+
+.submit:hover {
+  background-color: #00bfff96;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.social-account-container {
+  margin-top: 25px;
+}
+
+.social-account-container .title1 {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(20, 19, 19);
+}
+
+.social-account-container .social-accounts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.social-account-container .social-accounts .social-button {
+  background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(112, 112, 112) 100%);
+  border: 5px solid white;
+  padding: 5px;
+  border-radius: 50%;
+  width: 40px;
+  aspect-ratio: 1;
+  display: grid;
+  place-content: center;
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 12px 10px -8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-account-container .social-accounts .social-button .svg {
+  fill: white;
+  margin: auto;
+}
+
+.social-account-container .social-accounts .social-button:hover {
+  transform: scale(1.2);
+}
+
+.social-account-container .social-accounts .social-button:active {
+  transform: scale(0.9);
+}
+
+.agreement {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.agreement a {
+  text-decoration: underline;
+  color: #eee;
+  font-size: 15px;
+}
+
+.agreement :hover {
+  color: #0097a7;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-500%); /* Starts off-screen above */
+  }
+  100% {
+    transform: translateY(0); /* Slides down to original position */
+  }
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateX(-1000%); /* Element starts off-screen */
+  }
+  100% {
+    transform: translateX(0); /* Element ends at its original position */
+  }
+}
+
+.section:hover {
+  box-shadow: 10px 5px rgb(165, 42, 42, 0.4);
+}
+
+fieldset {
+  background-color: white;
+  color: #035863;
+  width: 100%;
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+  align-items: center;
+}
+
+dialog {
+  justify-content: center;
+  border: 2px solid darkblue;
+  border-radius: 30px;
+  background-color: rgb(165, 42, 42, 0.9);
+  color: white;
+}
+
+::backdrop {
+  background-color: rgb(250, 235, 215, 0.3);
+}
+
+#title {
+  display: grid;
+  grid-template-columns: auto 44px;
+  background-color: burlywood;
+  border-bottom: darkblue 2px solid;
+  text-align: center;
+}
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

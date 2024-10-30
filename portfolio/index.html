@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/portfolio.css" />
     <link rel="stylesheet" href="styles/min-portfolio.css" />
-    <script type="module" src="scripts/displayCertificates.js"></script>
-    <script src="scripts/responsive_menu.js"></script>
+    <script src="scripts/responsive_menu.js" defer></script>
+    <link rel="stylesheet" href="styles/min-portfolio.css" />
     <title>Mulubahzumu Kemmeh Sipor - Portfolio</title>
   </head>
   <body>
@@ -23,123 +23,36 @@
           ><img src="images/icons.webp" alt="Portfolio Logo"
         /></a>
       </div>
+      <button id="unseen" type="button" aria-label="Menu Button"></button>
       <nav class="navigation">
-        <a href="#hero">Home</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="skill.html">Skills</a>
+        <a href="project.html">Projects</a>
+        <a href="certificate.html">Certificates</a>
+        <a href="contactus.html">Contact</a>
       </nav>
     </header>
 
     <!-- Hero Section with Introduction -->
     <section id="hero" class="hero-section">
-      <img src="images/hero(2).webp" alt="Monrovia" class="hero-background" loading="lazy" />
+      <img
+        src="images/hero(2).webp"
+        alt="Monrovia"
+        class="hero-background"
+        loading="lazy"
+      />
       <div class="hero-content">
         <h1 class="hero-title">Mulubahzumu Kemmeh Sipor</h1>
         <p class="hero-subtitle">
           Front-end Developer | Clean Design | Sharp Code
         </p>
-        <a href="#projects" class="cta-button">View My Projects</a>
+        <a href="project.html" class="cta-button"
+          ><button type="button" aria-label="button">
+            View My Projects
+          </button></a
+        >
       </div>
     </section>
-
-    <!-- Skills Section with Categories -->
-    <section id="skills" class="skills-section">
-      <h2>Technical Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3>Frontend</h3>
-          <ul>
-            <li>JavaScript (ES6+)</li>
-            <li>React</li>
-            <li>HTML & CSS</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h3>Backend</h3>
-          <ul>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>REST APIs</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h3>Design</h3>
-          <ul>
-            <li>Figma</li>
-            <li>Adobe XD</li>
-            <li>Responsive Layouts</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section with Modal Pop-ups -->
-    <section id="projects" class="projects-section">
-      <h2>Projects</h2>
-      <div class="projects-gallery">
-        <!-- Each project will have a modal for detailed view -->
-        <div class="project-card" onclick="openModal('project1')">
-          <img src="images/project1.webp" alt="Project 1" />
-          <h3>Project Title 1</h3>
-          <p>Brief description of the project.</p>
-        </div>
-        <div class="project-card" onclick="openModal('project2')">
-          <img src="images/project2.webp" alt="Project 2" />
-          <h3>Project Title 2</h3>
-          <p>Brief description of the project.</p>
-        </div>
-        <!-- Add more projects as needed -->
-      </div>
-
-      <!-- Modal structure for projects -->
-      <dialog id="project1" class="project-modal">
-        <div class="modal-content">
-          <h2>Project Title 1</h2>
-          <p>Detailed project description and technical details.</p>
-          <button onclick="closeModal('project1')" class="close-button">
-            Close
-          </button>
-        </div>
-      </dialog>
-      <dialog id="project2" class="project-modal">
-        <div class="modal-content">
-          <h2>Project Title 2</h2>
-          <p>Detailed project description and technical details.</p>
-          <button onclick="closeModal('project2')" class="close-button">
-            Close
-          </button>
-        </div>
-      </dialog>
-    </section>
-
-    <!-- Certificates Section with Hover Details -->
-    <section id="certificates" class="certificates-section">
-      <h2>Certificates</h2>
-      <div class="certificates-grid">
-        <div id="promoCards"></div>
-      </div>
-    </section>
-
-    <!-- Contact Me Section with Contact Form -->
-    <section id="contact" class="contact-section">
-      <h2>Contact Me</h2>
-      <form
-        action="mailto:sip23001@byui.edu"
-        method="POST"
-        class="contact-form"
-      >
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit" class="submit-button">Send Message</button>
-      </form>
-    </section>
-
     <!-- Footer with Social Links -->
     <footer class="footer">
       <div class="footer-content">
@@ -164,18 +77,5 @@
         © <span id="year"></span> Mulubahzumu Kemmeh Sipor. All Rights Reserved.
       </p>
     </footer>
-
-    <script>
-      // JavaScript for modals and year update
-      document.getElementById("year").textContent = new Date().getFullYear();
-
-      function openModal(modalId) {
-        document.getElementById(modalId).showModal();
-      }
-
-      function closeModal(modalId) {
-        document.getElementById(modalId).close();
-      }
-    </script>
   </body>
 </html>

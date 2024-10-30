@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/portfolio.css" />
     <link rel="stylesheet" href="styles/min-portfolio.css" />
-    <script type="module" src="scripts/displayCertificates.js"></script>
-    <script src="scripts/responsive_menu.js"></script>
+    <script src="scripts/responsive_menu.js" defer></script>
+    <script type="module" src="scripts/displaySkill.js"></script>
     <title>Mulubahzumu Kemmeh Sipor - Portfolio</title>
   </head>
   <body>
@@ -23,6 +23,7 @@
           ><img src="images/icons.webp" alt="Portfolio Logo"
         /></a>
       </div>
+      <button id="menu" aria-label="Menu Button" type="button"></button>
       <nav class="navigation">
         <a href="index.html">Home</a>
         <a href="skill.html">Skills</a>
@@ -31,11 +32,35 @@
         <a href="contactus.html">Contact</a>
       </nav>
     </header>
-    <!-- Certificates Section with Hover Details -->
-    <section id="certificates" class="certificates-section">
-      <h2>Certificates</h2>
-      <div class="certificates-grid">
-        <div id="promoCards"></div>
+    <!-- Skills Section with Categories -->
+    <section id="skills" class="skills-section">
+      <h2>Technical Skills</h2>
+      <div class="skillCards" aria-hidden="true"></div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <ul>
+            <li>JavaScript (ES6+)</li>
+            <li>React</li>
+            <li>HTML & CSS</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>React.js</li>
+            <li>REST APIs</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Design</h3>
+          <ul>
+            <li>Microsoft Paint</li>
+            <li>Corel Draw</li>
+            <li>Responsive Layouts</li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -63,5 +88,18 @@
         © <span id="year"></span> Mulubahzumu Kemmeh Sipor. All Rights Reserved.
       </p>
     </footer>
+
+    <script>
+      // JavaScript for modals and year update
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      function openModal(modalId) {
+        document.getElementById(modalId).showModal();
+      }
+
+      function closeModal(modalId) {
+        document.getElementById(modalId).close();
+      }
+    </script>
   </body>
 </html>

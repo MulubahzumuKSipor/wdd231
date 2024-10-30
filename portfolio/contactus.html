@@ -25,22 +25,22 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/icons.ico" />
     <link rel="stylesheet" href="styles/portfolio.css">
     <script src="scripts/responsive_menu.js" defer></script>
-    <link rel="stylesheet" href="styles/form.css" />
     <title>Mulubahzumu Kemmeh Sipor</title>
   </head>
   <body>
-    <header>
-      <div id="sided">
+    <!-- Sticky Header with Navigation -->
+    <header class="sticky-header">
+      <div id="logo">
         <a href="index.html"
-          ><img src="images/icons.webp" alt="Baddest-Icon"
+          ><img src="images/icons.webp" alt="Portfolio Logo"
         /></a>
       </div>
-      <button id="menu" type="button"></button>
       <nav class="navigation">
         <a href="index.html">Home</a>
+        <a href="skill.html">Skills</a>
         <a href="project.html">Projects</a>
         <a href="certificate.html">Certificates</a>
-        <a href="contactus.html">Contact me</a>
+        <a href="contactus.html">Contact</a>
       </nav>
     </header>
     <main>
@@ -97,8 +97,7 @@
             <span>Contact Number</span>
           </label>
           <fieldset>
-            <legend>Feedback</legend>
-            <label>Any Feedback is appreciated</label>
+            <label><strong>Any Feedback is appreciated </strong> </label>
             <textarea
               name="textarea"
               id="review"
@@ -108,7 +107,7 @@
             ></textarea>
           </fieldset>
 
-          <button class="submit" name="submit">Register</button>
+          <button class="submit" name="submit">Send</button>
           <p class="signin">Already have an acount ? <a href="#">Signin</a></p>
         </form>
         <div class="social-account-container">
@@ -158,27 +157,28 @@
       </section>
       <script type="module" src="scripts/join.js"></script>
     </main>
-    <footer>
-      <div>
-        <p>
-          <span id="modified">Mulubahzumu Kemmeh Sipor <br />
-          sip23001@byui.edu <br />
-          (231) 886-678-786
-        </p>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>Mulubahzumu Kemmeh Sipor | sip23001@byui.edu | (231) 886-678-786</p>
+        <div class="social-links">
+          <a href="https://linkedin.com" aria-label="LinkedIn Profile"
+            ><img src="images/linkedIn.svg" alt="LinkedIn"
+          /></a>
+          <a
+            href="https://web.facebook.com/mulubahzumukemmeh.sipor"
+            aria-label="Facebook Profile"
+            ><img src="images/facebook.svg" alt="Facebook"
+          /></a>
+          <a
+            href="https://github.com/MulubahzumuKSipor"
+            aria-label="GitHub Profile"
+            ><img src="images/github-icon.svg" alt="GitHub"
+          /></a>
+        </div>
       </div>
-      <div class="card">
-        <a href="https://linkedin.com" aria-label="LinkedIn Profile"><img src="images/linkedIn.svg" alt="LinkedIn"></a>
-        <a href="https://web.facebook.com/mulubahzumukemmeh.sipor" aria-label="Facebook profile"><img src="images/facebook.svg" alt="Facebook"></a>
-        <a href="https://github.com/MulubahzumuKSipor" aria-label="github Profile"><img src="images/github-icon.svg" alt=""> </a>
-      </div>
-      <div>
-        <p>
-          WDD231 Class Project <br />
-          Mulubahzumu Kemmeh Sipor <br />
-          ©<span id="year"></span> Mulubahzumu Portfolio <br />
-          <span id="last_modified"></span>
-        </p>
-      </div>
+      <p>
+        © <span id="year"></span> Mulubahzumu Kemmeh Sipor. All Rights Reserved.
+      </p>
     </footer>
 
   <script type="module" src="scripts/displayfullCertificates.js"></script>
