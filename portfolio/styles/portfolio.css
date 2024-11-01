@@ -362,6 +362,7 @@ figcaption {
 .social-account-container .title1 {
   display: block;
   text-align: center;
+  color: #eee;
   font-size: 20px;
   color: rgb(20, 19, 19);
 }
