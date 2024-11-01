@@ -339,7 +339,7 @@ figcaption {
   border-radius: 10px;
   color: black;
   font-size: 16px;
-  transform: 0.3s ease;
+  transition: 0.3s ease;
   background-color: burlywood;
   width: 100%;
 }
