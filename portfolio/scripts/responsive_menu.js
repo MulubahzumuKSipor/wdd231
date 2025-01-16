@@ -22,3 +22,13 @@ function closeModal(modalId) {
     }
   });
 }
+
+// Scroll effects
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".sticky-header");
+  const scrollY = window.scrollY;
+  const maxScroll = 300;
+
+  const opacity = Math.max(1 - scrollY / maxScroll, 0.5);
+  navbar.style.opacity = opacity.toString();
+});
