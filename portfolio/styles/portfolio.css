@@ -160,6 +160,12 @@ header:hover{
   flex-wrap: wrap;
   justify-content: space-between; /* Space between project cards */
 }
+.projects-gallery a{
+  color: #1163ff;
+  padding-top: 20px;
+  text-decoration: none;
+  font-size: large;
+}
 .project-card {
   background-color: #292929; /* Background for project cards */
   border-radius: 10px;
@@ -402,12 +408,11 @@ figcaption {
 .social-account-container {
   margin-top: 25px;
 }
-.social-account-container .title1 {
+.social-account-container p {
   display: block;
   text-align: center;
   color: #eee;
-  font-size: 20px;
-  color: rgb(20, 19, 19);
+  font-size: 22px;
 }
 .social-account-container .social-accounts {
   width: 100%;

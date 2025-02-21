@@ -27,13 +27,12 @@
       </div>
       <button id="menu" type="button" aria-label="Menu Button"></button>
       <nav class="navigation">
-        <a href="#hero">Home</a>
+        <a href="index.html">Home</a>
         <a href="#aboutme">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#certificates">Achievements</a>
-        <a href="#contact">Contact</a>
-        <a href="#feedback">Feedback</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </header>
     <!-- Hero Section with Introduction -->
@@ -60,7 +59,7 @@
           </button></a
         >
         <div id="hero-footer"> 
-          <p>Our ideas are mostly influenced by our lifestlyes. 
+          <p>Our ideas are mostly influenced by our lifestyles. 
             <span>--Mulubahzumu K Sipor</span>
           </p>
           <span id="social-links">
@@ -165,20 +164,7 @@
             >Visit Site</a
           >
         </div>
-        <div class="project-card" onclick="openModal('project1')">
-          <img src="images/Chamber.webp" alt="Project 1" />
-          <h3>Chamber of Commerce</h3>
-          <p>
-            This website will serve as a resource hub for businesses in the city
-            of Paynesville.
-          </p>
-          <a
-            href="https://mulubahzumuksipor.github.io/wdd231/chamber/index.html"
-            target="_blank"
-            rel="noopener"
-            >Visit Site</a
-          >
-        </div>
+        
         <div class="project-card" onclick="openModal('project2')">
           <img src="images/form.webp" alt="Project 2" />
           <h3>Basic Form</h3>
@@ -194,8 +180,22 @@
             Visit Site</a
           >
         </div>
-        <div class="project-card" onclick="openModal('project2')">
-          <img src="images/form.webp" alt="Project 2" />
+        <div class="project-card" onclick="openModal('project3')">
+          <img src="images/compressed_temple.jpg" alt="Project 3" />
+          <h3>Picture Album</h3>
+          <p>
+            The webpage currently functions as a static image gallery for showcasing 
+            pictures. 
+          </p>
+          <a
+            href="https://mulubahzumuksipor.github.io/wdd131/filtered-temples.html"
+            target="_blank"
+            rel="noopener"
+            >Visit Site</a
+          >
+        </div>
+        <div class="project-card" onclick="openModal('project4')">
+          <img src="images/form.webp" alt="Project 4" />
           <h3>Basic Form</h3>
           <p>
             Providing a visual hint of what to expect when interacting with
@@ -249,6 +249,40 @@
           </button>
         </div>
       </dialog>
+      <dialog id="project3" class="project-modal">
+        <div class="modal-content">
+          <h2>Form</h2>
+          <p>
+            A dynamic web project that enables users to explore and filter LDS temples based on specific criteria. Built with HTML, CSS, and JavaScript, the site delivers a smooth and engaging user experience by updating content dynamically. The project focuses on accessibility, performance, and clean UI/UX design.
+          </p>
+          <button
+            onclick="closeModal('project3')"
+            class="close-button"
+            type="button"
+            aria-label="Close Button"
+          >
+            Close
+          </button>
+        </div>
+      </dialog>
+      <dialog id="project2" class="project-modal">
+        <div class="modal-content">
+          <h2>Picture Album</h2>
+          <p>
+            Ideal for instructional materials or tutorials on filling out forms,
+            offering a general template that focuses on the key elements of form
+            interactions without distractions.
+          </p>
+          <button
+            onclick="closeModal('project2')"
+            class="close-button"
+            type="button"
+            aria-label="Close Button"
+          >
+            Close
+          </button>
+        </div>
+      </dialog>
     </section>
     <!-- Certificates Section with Hover Details -->
     <section id="certificates" class="certificates-section">
@@ -256,129 +290,11 @@
       <div class="certificates-grid">
         <div id="promoCards"></div>
       </div>
-    </section>
-    <!-- Contact Section with Form and Social Links -->
-    <section id="contact" >
-      <!-- Standard Form -->
-    <main>
-      <section>
-        <form class="form" method="get" action="thank_you.html">
-          <p class="title">Connect</p>
-          <p class="message">Contact the Dev.</p>
-          <label>
-            <input
-              name="first"
-              class="input"
-              type="text"
-              placeholder=""
-              required
-              title="First Name"
-              autocomplete="given-name"
-            />
-            <span>First Name</span>
-          </label>
-          <label>
-            <input
-              name="last"
-              class="input"
-              type="text"
-              placeholder=""
-              required
-              title="Last Name"
-              autocomplete="family-name"
-            />
-            <span>Last Name</span>
-          </label>
-          <label>
-            <input
-              name="email"
-              class="input"
-              type="email"
-              placeholder=""
-              required=""
-              title="email"
-              autocomplete="email"
-            />
-            <span>Email</span>
-          </label>
-          <label>
-            <input
-              name="contact"
-              class="input"
-              type="tel"
-              placeholder=""
-              required=""
-              title="contact"
-              autocomplete="tel"
-            />
-            <span>Contact Number</span>
-          </label>
-          <fieldset>
-            <label><strong>Any Feedback is appreciated </strong> </label>
-            <textarea
-              name="textarea"
-              id="review"
-              rows="5"
-              cols="33"
-              aria-label="Text area"
-            ></textarea>
-          </fieldset>
-
-          <button class="submit" name="submit">Send</button>
-          <p class="signin">Already have an acount ? <a href="#">Signin</a></p>
-        </form>
-        <div class="social-account-container">
-          <span class="title1">or Sign in with</span>
-          <div class="social-accounts">
-            <button class="social-button google" aria-label="Socials button">
-              <svg
-                class="svg"
-                xmlns="http://www.w3.org/2000/svg"
-                height="1em"
-                viewBox="0 0 488 512"
-              >
-                <path
-                  d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
-                ></path>
-              </svg>
-            </button>
-            <button class="social-button apple" aria-label="Socials button">
-              <svg
-                class="svg"
-                xmlns="http://www.w3.org/2000/svg"
-                height="1em"
-                viewBox="0 0 384 512"
-              >
-                <path
-                  d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"
-                ></path>
-              </svg>
-            </button>
-            <button class="social-button twitter" aria-label="Socials button">
-              <svg
-                class="svg"
-                xmlns="http://www.w3.org/2000/svg"
-                height="1em"
-                viewBox="0 0 512 512"
-              >
-                <path
-                  d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <span class="agreement"
-          ><a href="#">Learn user licence agreement</a></span
-        >
-      </section>      
-    </main>
-    </section>
-    
+    </section>    
     <!-- Footer with Social Links -->
     <footer class="footer">
       <div class="footer-content">
-        <p>Mulubahzumu Kemmeh Sipor | sip23001@byui.edu | (231) 886-678-786</p>
+        <p>Mulubahzumu Kemmeh Sipor | sip23001@byui.edu | (231) 770-552-043</p>
         <div class="social-links">
           <a href="https://linkedin.com" aria-label="LinkedIn Profile"
             ><img src="images/linkedIn.svg" alt="LinkedIn"
