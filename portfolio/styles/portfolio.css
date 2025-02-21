@@ -1,5 +1,4 @@
 
-@media only screen and (min-width: 35rem) {
   /* Normalize styles */
 * {
   margin: 0;
@@ -126,7 +125,7 @@ header:hover{
   padding: 60px 40px;
   background-color: #1e1e1e; /* Dark background for skills */
 }
-.skills-grid {
+#skills-grid {
   display: flex;
   padding: 3rem;
   justify-content: space-around;
@@ -194,15 +193,13 @@ header:hover{
   padding: 3rem;
 }
 #promoCards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   gap: 1rem;
   text-align: center;
 }
 #certificates {
   text-align: center;
   background-color: #292929;
-  
 }
 .certificate-card {
   position: relative; /* For hover effect */
@@ -752,7 +749,7 @@ dialog {
   background-color: #1e1e1e; /* Dark background for skills */
   overflow: hidden;
 }
-.skills-grid {
+#skills-grid {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; /* Wrap on smaller screens */
@@ -1153,5 +1150,4 @@ dialog {
     transform: translateY(0);
     opacity: 1;
   }
-}
 }
