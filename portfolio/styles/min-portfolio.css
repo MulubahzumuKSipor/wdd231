@@ -101,6 +101,19 @@
   .cta-button button:hover {
     background-color: #0097a7; /* Darker on hover */
   }
+
+  #aboutme{
+    margin: 0;
+    padding: 1rem;
+  }
+
+  aside #profile{
+    height: 5rem;
+    width: 5rem;
+    padding-right: 0.8rem;
+    
+    
+  }
   /* Skills Section */
   .skills-section {
     overflow: hidden;
